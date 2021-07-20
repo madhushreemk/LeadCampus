@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.leadcampusapp.StudentCompletedProject_Activity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:id="@+id/linearlayout_studentcompletedproject"
+        android:padding="10dp"
+        android:paddingTop="30dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title Of The Project (What is your idea)*?"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:id="@+id/studentcompletedproject_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_bottom_line"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:textColor="@color/colorBlack"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lnrlyt_projectTypeSpin"
+            android:paddingTop="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Project Type *"
+                android:textColor="@color/colorBlack"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:id="@+id/spin_projectType">
+            </androidx.appcompat.widget.AppCompatSpinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lnrlyt_projectTypeEdit"
+            android:paddingTop="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Project Type *"
+                android:textSize="12sp"
+                android:textColor="@color/colorBlack"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:background="@drawable/edittext_bottom_line"
+                android:id="@+id/edt_projectType">
+            </EditText>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Project Start and End Date *"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/colorBlack"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:id="@+id/editproject_datelabel_linearlayout"
+            >
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Start Date"
+                android:textColor="@color/colorBlack"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#20b6e8"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="End Date"
+                android:textColor="@color/colorBlack"
+                android:gravity="center"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:id="@+id/editproject_date_linearlayout"
+            >
+
+
+            <TextView
+                android:id="@+id/clickstartproject_editdate_TV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Click for Calendar"
+                android:textSize="13dp"
+
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:textColor="#c51162"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#20b6e8"
+
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/clickendproject_editdate_TV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:text="Click for Calendar"
+
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="#c51162"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:layout_gravity="center"
+            android:id="@+id/editstudentdays_linearlayout"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/editstudent_numberofdays_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Number of days:"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"/>
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Beneficiaries"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_noOfBeneficiaries"
+                android:layout_width="wrap_content"
+                android:textColorHint="@color/colorBlack"
+                android:textColor="@color/colorBlack"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_noOfBeneficiaries"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_bottom_line"
+                    android:textColorHint="@color/colorBlack"
+                    android:hint="@string/noOfBeneficiariesinnumber"
+                    android:textSize="15sp"
+                    android:inputType="number"
+                    android:textColor="@color/colorBlack"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:paddingLeft="30dp"
+                android:textColorHint="@color/colorBlack"
+                android:textColor="@color/colorBlack"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_whoareBeneficiaries"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_bottom_line"
+                    android:textColorHint="@color/colorBlack"
+                    android:hint="@string/whoareBeneficiaries"
+                    android:textSize="15sp"
+                    android:inputType="text"
+                    android:textColor="@color/colorBlack"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_placeOfImpl"
+            android:layout_width="match_parent"
+            android:paddingTop="30dp"
+            android:textColorHint="@color/colorBlack"
+            android:textColor="@color/colorBlack"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edt_placeOfImpl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bottom_line"
+                android:textColorHint="@color/colorBlack"
+                android:hint="Place Of Implementation"
+                android:textSize="15sp"
+                android:inputType="textMultiLine|textLongMessage"
+                android:textColor="@color/colorBlack"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_objective"
+            android:layout_width="match_parent"
+            android:paddingTop="30dp"
+            android:textColorHint="@color/colorBlack"
+            android:textColor="@color/colorBlack"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edt_objective"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bottom_line"
+                android:textColorHint="@color/colorBlack"
+                android:hint="Why you want to implement the idea?"
+                android:textSize="15sp"
+                android:inputType="textMultiLine|textLongMessage"
+                android:textColor="@color/colorBlack"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_actionplan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:textColorHint="@color/colorBlack"
+            android:textColor="@color/colorBlack"
+            >
+
+            <EditText
+                android:id="@+id/edt_actionplan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bottom_line"
+                android:textColorHint="@color/colorBlack"
+                android:hint="How you want to implement your idea?"
+                android:inputType="textMultiLine|textLongMessage"
+                android:textColor="@color/colorBlack"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_currentSituation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:textColorHint="@color/colorBlack"
+            android:textColor="@color/colorBlack"
+            >
+
+            <EditText
+                android:id="@+id/edt_currentSituation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bottom_line"
+                android:textColorHint="@color/colorBlack"
+                android:hint="Current Situation"
+                android:inputType="textMultiLine|textLongMessage"
+                android:textColor="@color/colorBlack"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_teamMembers"
+            android:gravity="center"
+            android:paddingTop="30dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Team Members"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/parent_linear_layout1"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edt_memberName"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:visibility="gone"
+                    android:background="@drawable/edittext_bottom_line"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                    android:hint="Member Name"
+                    android:inputType="textPersonName|textMultiLine"
+                    android:maxLines="3"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edt_memberMailId"
+                    android:layout_width="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:visibility="gone"
+                    android:background="@drawable/edittext_bottom_line"
+                    android:hint="e-mail id"
+                    android:inputType="textEmailAddress|textMultiLine"
+                    android:maxLines="3"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
+                    android:textSize="15sp" />
+                <!-- <Button
+                    android:id="@+id/delete_button"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/ic_delete"
+                    android:onClick="onDelete"/>-->
+            </LinearLayout>
+            <ImageButton
+                android:id="@+id/editproject_add_field_button"
+                android:layout_width="100dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_add_black_36dp"
+                android:layout_gravity="center"
+                android:paddingLeft="5dp"/>
+            <!-- <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textColor="@color/colorBlack"
+                 android:text="Add Member"/>-->
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            android:id="@+id/parent_linear_layout_TM"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/table_teamMember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" >
+            </TableLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_materialRequired"
+            android:gravity="center"
+            android:paddingTop="30dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Project Materials Required"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/parent_linearlayout_material"
+            android:orientation="vertical">
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edt_materialname"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/edittext_bottom_line"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                    android:hint="Material Name"
+                    android:inputType="textPersonName|textMultiLine"
+                    android:maxLines="3"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
+                    android:visibility="gone"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edt_materialcost"
+                    android:layout_width="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/edittext_bottom_line"
+                    android:hint="Enter material cost"
+                    android:inputType="number"
+                    android:textColor="@color/colorBlack"
+                    android:visibility="gone"
+                    android:textColorHint="@color/colorBlack"
+                    android:textSize="15sp" />
+                <!-- <Button
+                    android:id="@+id/delete_button"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/ic_delete"
+                    android:onClick="onDelete"/>-->
+            </LinearLayout>
+            <ImageButton
+                android:id="@+id/editproject_addmaterial_ib"
+                android:layout_width="100dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_add_black_36dp"
+                android:layout_gravity="center"
+                android:paddingLeft="5dp"/>
+            <!-- <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textColor="@color/colorBlack"
+                 android:text="Add Member"/>-->
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/parent_linear_layout"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lnrlyt_material"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="20dp"
+                android:orientation="horizontal">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_materialname"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#ffffff"
+                    android:textColor="#ffffff"
+                    >
+
+                    <EditText
+                        android:id="@+id/edt_materialname"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bottom_line"
+                        android:textColorHint="#ffffff"
+                        android:hint="vmmaterial Name"
+                        android:textColor="#ffffff"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_materialcost"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:textColorHint="#ffffff"
+                    android:textColor="#ffffff"
+                    >
+
+                    <EditText
+                        android:id="@+id/edt_materialcost"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bottom_line"
+                        android:textColorHint="#ffffff"
+                        android:hint="Cost"
+                        android:textColor="#ffffff"/>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/delete_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@android:drawable/ic_delete">
+                </Button>
+
+           </LinearLayout>-->
+
+            <TableLayout
+                android:id="@+id/table_material"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" >
+            </TableLayout>
+
+        </LinearLayout>
+
+
+
+        <!--<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/table_main"
+            android:layout_gravity="end"
+            android:paddingRight="100dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:padding="3dp"
+                    android:text="Total : "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="1000"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>-->
+
+<!--        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:id="@+id/btn_addMaterial"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/login_button_rectangle"
+                android:text="+ Add vmmaterial"/>
+        </LinearLayout>-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Program Manager Comments"
+                    android:id="@+id/pmcomments_txt"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorBlack"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    >
+                <Button
+                    android:id="@+id/chat_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:theme="@style/ChatBox"
+                    android:textColor="@color/colorWhite"
+                    android:drawableLeft="@drawable/chatbox"
+                    android:drawablePadding="3dp"
+                    android:layout_marginRight="3dp"
+                    android:textSize="10dp"
+                    android:text="Chat Box"/>
+                </RelativeLayout>
+<!--
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chat Box"
+                    android:id="@+id/chat_txt"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:layout_marginRight="2dp"
+                    android:textColor="@color/colorBlack"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/chat_box"
+                        android:layout_gravity="end"
+                        android:layout_toRightOf="@id/chat_txt"
+                        android:gravity="end"/>
+                </RelativeLayout>-->
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_PMComments"
+                android:lines="4"
+                android:padding="10dp"
+                android:textColor="@color/colorBlack"
+                android:background="@drawable/login_button_rectangle"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_projsubmit"
+            android:textColor="@color/colorBlack"
+            android:background="@drawable/submit"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:layout_marginTop="30dp"
+            />
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+    </LinearLayout>
+
+</ScrollView>
+</LinearLayout>

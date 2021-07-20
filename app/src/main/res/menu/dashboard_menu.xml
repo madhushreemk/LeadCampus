@@ -1,0 +1,53 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <!--<item
+        android:id="@+id/call"
+        android:icon="@drawable/ic_call"
+        android:title="@string/call"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/delete"
+        android:icon="@drawable/ic_delete"
+        android:title="@string/delete"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/edit"
+        android:icon="@drawable/ic_edit"
+        android:title="@string/edit"
+        app:showAsAction="never"/>-->
+    <item
+        android:id="@+id/changepin"
+        android:icon="@mipmap/ic_launcher"
+        android:iconTint="@color/colorPrimary"
+        android:colorBackground="@color/colorPrimary"
+        android:title="Change PIN"
+        app:showAsAction="never"/>
+
+    <!--<item
+        android:id="@+id/aboutus"
+        android:icon="@mipmap/ic_launcher"
+        android:iconTint="@color/colorwhite"
+        android:title="About Us"
+        app:showAsAction="never"/>-->
+
+   <!-- <item
+        android:id="@+id/action_notification"
+        android:title="notification"
+        app:actionLayout="@layout/custom_action_item_layout"
+        app:showAsAction="ifRoom"
+        android:visible="true" />-->
+
+    <!-- <item
+         android:id="@+id/logout"
+         android:icon="@mipmap/ic_launcher"
+         android:iconTint="@color/colorwhite"
+         android:title="Logout"
+         app:showAsAction="never"/>-->
+
+</menu>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+</menu>-->

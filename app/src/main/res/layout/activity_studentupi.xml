@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".Activity_studentUPI">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:visibility="visible"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:visibility="gone"
+        android:text="Welcome To DF Payment Module"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="visible"
+        android:background="@drawable/spinner_layout"
+
+        android:layout_marginTop="1dp"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="visible">
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:id="@+id/rel_soiltypelayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mainlinearlayout_ll"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="10dp"
+
+                    android:layout_marginBottom="10dp">
+
+                    <LinearLayout
+                        android:layout_width="190dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/spinner_layout"
+                        android:orientation="horizontal"
+                        tools:ignore="UselessParent">
+
+                        <Spinner
+                            android:layout_marginTop="2dp"
+                            android:id="@+id/paymentfor_sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textAlignment="center"
+                            android:dropDownVerticalOffset="35dp"
+                            android:spinnerMode="dropdown" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="-4dp"
+                        android:background="#FFFFFF"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:text="Payment For"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_marginTop="1dp"
+            android:id="@+id/amount_tv"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/background_color"
+            android:text="1Rs"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:layout_marginTop="1dp"
+            android:id="@+id/vendorname_tv"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="StudentName"
+            android:textColor="@color/background_color"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+    <EditText
+        android:layout_marginTop="1dp"
+        android:id="@+id/upi"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Enter UPI ID"
+        android:text="deshpandefoundation@rbl"
+        android:focusable="false"
+        android:cursorVisible="false"
+        app:layout_constraintTop_toTopOf="parent"></EditText>
+
+    <!--<Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:text="PAY"
+        android:layout_gravity="center"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/upi"></Button>-->
+
+        <Button
+            android:id="@+id/payment_bt"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="PAY"
+            android:textColor="#FFF"
+            android:theme="@style/Exchange" />
+
+    </LinearLayout>
+
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+
+            android:layout_margin="15dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/spinner_layout"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <!--<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Fees:1Rs"/>-->
+                <ListView
+                    android:id="@+id/summarylist_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/vivid_cyan"
+                    android:dividerHeight="2px"
+                    android:fillViewport="true"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text=" Payment Summary "
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:layout_marginLeft="120dp"
+                android:textColor="@color/colorPrimary"
+                android:background="#ffffff"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:visibility="gone"
+        android:background="@drawable/spinner_layout"
+
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="1dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment Summary"
+                android:textSize="15dp"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+                </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/summarydetails_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:text="Summary Details"
+            android:layout_gravity="center"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/upi"></Button>
+
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

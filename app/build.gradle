@@ -1,0 +1,120 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.leadcampusapp"
+        minSdkVersion 18
+        targetSdkVersion 29
+        versionCode 51
+        versionName "4.6"
+
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        packagingOptions{
+            exclude 'META-INF/rxjava.properties'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+
+
+
+
+
+    // implementation 'com.google.android.gms:play-services-tagmanager:11.6.0'
+
+    implementation 'androidx.vectordrawable:vectordrawable-animated:1.0.0'
+    implementation 'androidx.exifinterface:exifinterface:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.browser:browser:1.0.0'
+    implementation 'androidx.media:media:1.0.0'
+    //implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation 'com.android.support:multidex:1.0.3'
+
+
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+    implementation 'com.kofigyan.stateprogressbar:stateprogressbar:1.0.0'
+
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.codesgood:justifiedtextview:1.0.2'
+    implementation 'com.github.PhilJay:MPAndroidChart:v2.2.4'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'pl.bclogic:pulsator4droid:1.0.3'
+    implementation 'net.danlew:android.joda:2.9.9'
+
+    implementation 'com.facebook.shimmer:shimmer:0.4.0'
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+    implementation 'com.github.k0shk0sh:PermissionHelper:1.0.7'
+    implementation 'com.cocosw:bottomsheet:1.+@aar'
+
+
+
+    implementation 'com.google.android.material:material:1.0.0-rc01'
+    implementation 'com.google.android.material:material:1.1.0-alpha07'
+
+
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    implementation 'com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0'
+
+
+
+
+    //implementation 'com.paytm.appinvokesdk:appinvokesdk:1.2'
+    implementation 'com.paytm.appinvokesdk:appinvokesdk:1.5.4'
+
+
+
+
+    implementation 'com.google.android.gms:play-services-auth:18.1.0'
+    implementation 'com.google.firebase:firebase-auth:16.0.1'
+    implementation 'com.google.firebase:firebase-messaging:17.0.0'
+    implementation 'com.google.firebase:firebase-core:16.0.0'
+    implementation 'com.google.android.gms:play-services-tagmanager:16.0.0'
+
+
+    implementation files('libs/rxjava-1.0.2.jar')
+    implementation files('libs/additionnal.jar')
+    implementation files('libs/ftp4j-1.6.jar')
+    implementation files('libs/commons-net-3.3.jar')
+    implementation files('libs/ksoap2-android-assembly-2.4-jar-with-dependencies.jar')
+}
+apply plugin: 'com.google.gms.google-services'

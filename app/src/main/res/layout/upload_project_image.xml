@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/lnrlyt_uploadProjImg"
+    android:paddingTop="30dp"
+    android:paddingLeft="10dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_camera_alt_red_900_24dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/btn_uploadImage"
+        />
+
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/img_projImage"
+        android:src="@drawable/nature"
+        android:scaleType="fitXY"/>
+
+    &lt;!&ndash;    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/btn_uploadImage"
+            android:background="@drawable/login_button_rectangle"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:text="Upload Project Image"/>&ndash;&gt;
+
+
+
+
+
+
+</LinearLayout>
+-->
+
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="60dp"
+    android:paddingLeft="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:scaleType="fitXY"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:src="@drawable/devanand"
+        android:id="@+id/img_projImage" />
+
+<!--    <ImageButton
+        android:id="@+id/btn_uploadImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_camera_alt_black_36dp"
+        android:layout_alignRight="@+id/img_projImage"
+        android:layout_alignBottom="@+id/img_projImage"
+        android:background="@android:color/transparent"
+        android:layout_alignEnd="@+id/img_projImage" />-->
+</RelativeLayout>
+
+
+

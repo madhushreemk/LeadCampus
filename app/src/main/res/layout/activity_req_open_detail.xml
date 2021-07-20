@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="2dp"
+            android:focusableInTouchMode="true"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="3dp"
+
+                >
+
+
+                <TextView
+                    android:id="@+id/typeofleave_TV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Ticket No"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/colorBlack"
+
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/duration_TV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Lead ID"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="3dp"
+
+                >
+
+
+                <TextView
+                    android:id="@+id/ticketNo_TV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lead_id_TV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorBlack"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp"
+
+                >
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Student Name"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile No"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="3dp"
+
+                >
+
+
+                <TextView
+                    android:id="@+id/StudName_TV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/MobNo_TV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorBlack"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp"
+
+                >
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Mail ID"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="College Name"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="3dp"
+
+                >
+
+
+                <TextView
+                    android:id="@+id/MailId_TV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/CollgName_TV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorBlack"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp"
+
+                >
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Request Date"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Request Type"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="3dp"
+
+                >
+
+
+                <TextView
+                    android:id="@+id/ReqDate_TV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ReqType_TV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorBlack"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/proj_letter_lv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                >
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Project Title"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Generate Doc"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/proj_letter_lv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="3dp"
+                android:visibility="gone"
+
+                >
+
+
+                <TextView
+                    android:id="@+id/projTitle_TV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/generate_doc_cb"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:checked="true"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/proj_letter_lv3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:layout_marginTop="10dp">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Valid From Date"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Valid To Date"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/proj_letter_lv4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                >
+
+
+                <TextView
+                    android:id="@+id/clickfromdate_TV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Click for Calendar"
+                    android:textSize="12dp"
+
+                    android:layout_weight="1"
+
+                    android:gravity="center"
+                    android:textColor="#c51162"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#20b6e8"
+
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/clicktodate_TV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:text="Click for Calendar"
+
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="#c51162"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Request Message:"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorBlack"/>
+
+
+                <EditText
+                    android:id="@+id/req_msg_ET"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:ems="10"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:inputType="textMultiLine"
+                    android:textColor="#354049"
+                    android:background="@drawable/shap"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Response Message:"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorBlack"/>
+
+
+                <EditText
+                    android:id="@+id/Res_msg_ET"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:ems="10"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:inputType="textMultiLine"
+                    android:textColor="#354049"
+                    android:background="@drawable/shap"/>
+
+                <Button
+                    android:id="@+id/close_ticket_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:theme="@style/Exchange"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite"
+                    android:text="Close Ticket"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+</ScrollView>

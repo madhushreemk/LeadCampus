@@ -1,0 +1,128 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+        <!--<item name="android:popupMenuStyle">@style/PopupMenu</item>-->
+        <!--<item name="android:popupBackground">@color/colorYellow</item>-->
+
+        <item name="colorAccent">@color/colorPinkdark</item>
+        <!--<item name="android:itemBackground">@color/colorMenuBackground</item>
+        <item name="android:itemTextAppearance">@style/customMenuTextApearance</item>-->
+
+
+        <!-- <item name="android:spinnerStyle">@style/custom_spinner</item>-->
+    </style>
+
+
+    <style name="AppThemeActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!-- <item name="colorAccent">@color/colorAccent</item>-->
+        <item name="colorAccent">@color/colorPinkdark</item>
+
+        <!-- To change the popup menu and app text color  -->
+        <!-- <item name="android:textColor">@color/colorWhite</item>-->
+
+        <!-- To change the background of options menu-->
+        <item name="android:itemBackground">@color/colorPrimary</item>
+        <item name="android:itemTextAppearance">@style/customMenuTextApearance</item>
+        <item name="android:datePickerStyle">@style/DatePickerTheme</item>
+    </style>
+
+    <style name="customMenuTextApearance" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="PopupMenu" parent="AppTheme">
+        <item name="android:popupBackground">@color/colorYellow</item>
+        <!--<item name="android:itemBackground">@color/colorYellow</item>-->
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!--This is commented-->
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!--    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorPrimary">@color/colorYellow</item>
+    </style>-->
+
+    <!--    <style name="custom_spinner" parent="@android:style/Widget.Holo.Light.Spinner">
+        <item name="android:divider">@color/colorBlack</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>-->
+
+
+    <!--   <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark">
+        &lt;!&ndash; added all to see which one will work.&ndash;&gt;
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+        <item name="android:itemBackground">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/colorAccent</item>
+
+    </style>-->
+
+
+    <!-- <style name="EditBottomTheme">
+        <item name="bottomTheme">@color/colorWhite</item>
+    </style>-->
+
+    <style name="spinner_style">
+        <item name="android:background">@drawable/edittext_bottom_line</item>
+    </style>
+
+
+    <!--<style name="customRatingBar" parent="android:style/Widget.vmmaterial.RatingBar.Small">
+            <item name="android:size"
+    </style>-->
+
+    <style name="DatePickerTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+    </style>
+
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/ratingNormal</item>
+        <item name="colorControlActivated">@color/ratingActive</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MyButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/blue_100</item>
+        <item name="colorButtonNormal">@color/blue_500</item>
+    </style>
+    <style name="SaveDraft" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/amber_100</item>
+        <item name="colorButtonNormal">@color/amber_500</item>
+    </style>
+    <style name="Exchange" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/green_100</item>
+        <item name="colorButtonNormal">@color/green_500</item>
+    </style>
+
+    <style name="SubmitButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/teal_100</item>
+        <item name="colorButtonNormal">@color/teal_600</item>
+    </style>
+
+    <style name="ChatBox" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">#E1F5FE</item>
+        <item name="colorButtonNormal">#17b4e3</item>
+    </style>
+
+</resources>

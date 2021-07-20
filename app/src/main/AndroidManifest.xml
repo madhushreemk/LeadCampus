@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.leadcampusapp"
+    android:versionCode="51"
+    android:versionName="4.6">
+
+    <uses-permission android:name="android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/icon_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:replace="android:allowBackup">
+        <activity android:name=".PM_Project_FundMain"></activity>
+        <activity android:name=".ProjectFundMainActivity" />
+        <activity
+            android:name=".ManagerFeesCollectionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <!--
+   tools:replace="android:allowBackup"
+   tools:replace="android:appComponentFactory"
+        -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.mydomain.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+ <receiver
+            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false" />
+        <receiver
+            android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService" />
+        -->
+        <receiver
+            android:name=".ConnectivityReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <activity
+            android:name=".Activity_pinlogin"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <activity
+            android:name=".Activity_confirmpin"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <activity
+            android:name=".Activity_confirmoldpin"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <activity
+            android:name=".Activity_setpin"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <!--
+            <activity
+            android:name=".ProjectDetails"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EventsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NewsFeedsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        -->
+        <activity
+            android:name=".ProjectDetails"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <activity
+            android:name=".EventsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <activity
+            android:name=".NewsFeedsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <activity
+            android:name=".EditProjectActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <activity
+            android:name=".AboutUsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <activity
+            android:name=".PMHomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <activity
+            android:name=".PMProjectDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <activity
+            android:name=".PMUnapproved_DetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <activity
+            android:name=".PMComplitionProjectActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <activity
+            android:name=".PMEditProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <activity
+            android:name=".PMApproved_DetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <activity
+            android:name=".PMGallaryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <activity
+            android:name=".ComplitionGallaryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <activity
+            android:name=".ContactUsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <activity
+            android:name=".StoryBlogActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RequestActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <activity
+            android:name=".LeadStoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <activity
+            android:name=".Activity_studentUPI"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:resource="@drawable/icon_notification">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".MyFirebaseInstanceIDService"
+            android:resource="@drawable/icon_notification">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service> <!-- <activity android:name=".SplashActivity"></activity> -->
+        <activity
+            android:name=".AnalyticChartActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <activity android:name=".ProjectStatusReport" /> <!-- <activity android:name=".ChatsActivity"></activity> -->
+        <activity android:name=".PMGetThemeWiseProjectCount" /> <!-- <activity android:name=".AnyChartPieFragment"></activity> -->
+        <activity
+            android:name=".FeesPaidActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <activity
+            android:name=".FundMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <activity
+            android:name=".CompletionGallerySelectActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <activity
+            android:name=".CompletionGalleryFolderSelectActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <activity
+            android:name=".CompletionDocumentFolderSelectActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <!--
+<activity
+            android:name=".YoutubeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        -->
+        <activity
+            android:name=".NotificationHistoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <activity
+            android:name=".PMNotificationHistoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <activity
+            android:name=".TShirtPaidActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <activity
+            android:name=".GuestLoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GuestActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <activity
+            android:name=".ImageCompWebserviceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <activity
+            android:name=".FinalProjectCompletion_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <activity
+            android:name=".FeedbackActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <activity
+            android:name=".PMRequestActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <activity
+            android:name=".ReqOpenDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <activity
+            android:name=".StudentRequest"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeActionBar" />
+        <activity
+            android:name=".ChatActivity"
+            android:theme="@style/AppThemeActionBar" />
+        <activity
+            android:name=".PrincipleHomeActivity"
+            android:theme="@style/AppThemeActionBar" />
+        <activity
+            android:name=".PrincipleLoginActivity"
+            android:theme="@style/AppThemeActionBar" />
+    </application>
+
+</manifest>

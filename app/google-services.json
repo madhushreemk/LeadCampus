@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "830064162862",
+    "firebase_url": "https://df-leadcampus.firebaseio.com",
+    "project_id": "df-leadcampus",
+    "storage_bucket": "df-leadcampus.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830064162862:android:55ef121e7473d84b",
+        "android_client_info": {
+          "package_name": "com.leadcampusapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "830064162862-5vh60pec1mctjus7eo7donicdl7fif6g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.leadcampusapp",
+            "certificate_hash": "8a7cfff8d13816f1e754b1012a3fd235a199de06"
+          }
+        },
+        {
+          "client_id": "830064162862-ctn3l98e2igqoom1t7lk1lenapskvmic.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.leadcampusapp",
+            "certificate_hash": "6a22b9f289d8a4cc8899dc224ff931ee034380b0"
+          }
+        },
+        {
+          "client_id": "830064162862-nohid6fk5j27f2g6fvc0qdrn81pumdkg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAl6P7is4pIcI5BkkxHwbDrnMojAw9VkrQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "830064162862-nohid6fk5j27f2g6fvc0qdrn81pumdkg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

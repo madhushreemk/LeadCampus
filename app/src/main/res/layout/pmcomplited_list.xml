@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical" >
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:orientation="horizontal" >
+
+ <!-- <TextView
+      android:id="@+id/LeadId"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingTop="5dp"
+      android:paddingBottom="5dp"
+      android:textColor="@android:color/white"
+      android:layout_weight="1"
+      android:text="LeadId" />-->
+
+ <TextView
+     android:id="@+id/Name"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:paddingTop="5dp"
+     android:paddingBottom="5dp"
+     android:textColor="@android:color/black"
+     android:layout_weight="1"
+     android:gravity="center"
+     android:text="Name" />
+
+ <TextView
+     android:id="@+id/College"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:paddingTop="5dp"
+     android:paddingBottom="5dp"
+     android:textColor="@android:color/black"
+     android:layout_weight="1"
+     android:gravity="center"
+     android:text="College" />
+
+ <TextView
+     android:id="@+id/ProjectTittle"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:paddingTop="5dp"
+     android:paddingBottom="5dp"
+     android:textColor="@android:color/black"
+     android:layout_weight="1"
+     android:gravity="center"
+     android:text="Project Tittle" />
+ <TextView
+     android:id="@+id/Budget"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:paddingTop="5dp"
+     android:paddingBottom="5dp"
+     android:textColor="@android:color/black"
+     android:layout_weight="1"
+     android:gravity="center"
+     android:text="Budget" />
+
+ <TextView
+     android:id="@+id/tv_leadid"
+     android:visibility="gone"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:paddingTop="5dp"
+     android:paddingBottom="5dp"
+     android:textColor="@android:color/black"
+     android:layout_weight="1"
+     android:gravity="center"
+     android:text="Lead Id" />
+
+ <TextView
+     android:id="@+id/tv_projId"
+     android:visibility="gone"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:paddingTop="5dp"
+     android:paddingBottom="5dp"
+     android:textColor="@android:color/black"
+     android:layout_weight="1"
+     android:gravity="center"
+     android:text="Project Id" />
+
+ <TextView
+     android:id="@+id/tv_mobileNo"
+     android:visibility="gone"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:paddingTop="5dp"
+     android:paddingBottom="5dp"
+     android:textColor="@android:color/black"
+     android:layout_weight="1"
+     android:gravity="center"
+     android:text="Mobile No" />
+
+ <TextView
+     android:id="@+id/tv_studImagePath"
+     android:visibility="gone"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:paddingTop="5dp"
+     android:paddingBottom="5dp"
+     android:textColor="@android:color/black"
+     android:layout_weight="1"
+     android:gravity="center"
+     android:text="" />
+
+ <TextView
+     android:id="@+id/pmcomp_collegenamelist_tv"
+     android:visibility="gone"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:paddingTop="5dp"
+     android:paddingBottom="5dp"
+     android:textColor="@android:color/black"
+     android:layout_weight="1"
+     android:gravity="center"
+     android:text="" />
+
+ <TextView
+     android:id="@+id/pmcomp_streamnamelist_tv"
+     android:visibility="gone"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:paddingTop="5dp"
+     android:paddingBottom="5dp"
+     android:textColor="@android:color/black"
+     android:layout_weight="1"
+     android:gravity="center"
+     android:text="" />
+
+
+ <TextView
+     android:id="@+id/pmcomp_isimpactproject_tv"
+     android:visibility="gone"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:paddingTop="5dp"
+     android:paddingBottom="5dp"
+     android:textColor="@android:color/black"
+     android:layout_weight="1"
+     android:gravity="center"
+     android:text="" />
+
+</LinearLayout>
+
+<View
+android:layout_width="match_parent"
+android:layout_marginTop="3dp"
+android:layout_height="1dp"
+android:background="#c0c0c0"/>
+</LinearLayout>

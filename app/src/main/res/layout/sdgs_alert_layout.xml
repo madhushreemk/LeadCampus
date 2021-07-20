@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/lnrlyt_customStudent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Select the SDGS "
+        android:textSize="18dp"
+        android:layout_gravity="center"
+        android:textColor="@color/colorBlack"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/goalslist_linearlayout"
+        android:orientation="vertical"
+        android:padding="10dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 1. "
+            android:textColor="@color/colorBlack"/>
+
+        <CheckBox
+            android:id="@+id/goal_1_nopoverty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Poverty"
+            android:textSize="15dp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/colorBlack"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 2."
+            android:textColor="@color/colorBlack"/>
+        <CheckBox
+            android:id="@+id/goal_2_zerohunger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zero Hunger"
+            android:textSize="15dp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 3."
+            android:textColor="@color/colorBlack"/>
+        <CheckBox
+            android:id="@+id/goal_3_goodhealth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Good Health and Well-being"
+            android:textSize="15dp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 4."
+            android:textColor="@color/colorBlack"/>
+        <CheckBox
+            android:id="@+id/goal_4_quality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quality Education"
+            android:textSize="15dp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 5."
+            android:textColor="@color/colorBlack"/>
+        <CheckBox
+            android:id="@+id/goal_5_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender Equality"
+            android:textSize="15dp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 6."
+            android:textColor="@color/colorBlack"/>
+        <CheckBox
+            android:id="@+id/goal_6_clean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clean Water and Sanitation"
+            android:textSize="15dp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 7."
+            android:textColor="@color/colorBlack"/>
+        <CheckBox
+            android:id="@+id/goal_7_affordable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Affordable and Clean Energy"
+            android:textSize="15dp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 8."
+            android:textColor="@color/colorBlack"/>
+        <CheckBox
+            android:id="@+id/goal_8_decent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Decent Work and Economic Growth"
+            android:textSize="15dp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 9."
+            android:textColor="@color/colorBlack"/>
+        <CheckBox
+            android:id="@+id/goal_9_industry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Industry or Innovation and Infrastructure"
+            android:textSize="15dp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10."
+            android:textColor="@color/colorBlack"/>
+        <CheckBox
+            android:id="@+id/goal_10_reduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reduced Inequality"
+            android:textSize="15dp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11."
+            android:textColor="@color/colorBlack"/>
+        <CheckBox
+            android:id="@+id/goal_11_sustain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sustainable Cities and Communities"
+            android:textSize="15dp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12."
+            android:textColor="@color/colorBlack"/>
+        <CheckBox
+            android:id="@+id/goal_12_responsible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Responsible Consumption and Production"
+            android:textSize="15dp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13."
+            android:textColor="@color/colorBlack"/>
+        <CheckBox
+            android:id="@+id/goal_13_climate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Climate Action"
+            android:textSize="15dp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14."
+            android:textColor="@color/colorBlack"/>
+        <CheckBox
+            android:id="@+id/goal_14_lifewater"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Life Below Water"
+            android:textSize="15dp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15."
+            android:textColor="@color/colorBlack"/>
+        <CheckBox
+            android:id="@+id/goal_15_lifeland"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Life on Land"
+            android:textSize="15dp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16."
+            android:textColor="@color/colorBlack"/>
+        <CheckBox
+            android:id="@+id/goal_16_peace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Peace and Justice Strong Institutions"
+            android:textSize="15dp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17."
+            android:textColor="@color/colorBlack"/>
+        <CheckBox
+            android:id="@+id/goal_17_partnerships"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Partnerships to achieve the Goal"
+            android:textSize="15dp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18."
+            android:textColor="@color/colorBlack"/>
+        <CheckBox
+            android:id="@+id/goal_18_none"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="None"
+            android:textSize="15dp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/red"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/cancel_goals_bt"
+            android:textAllCaps="false"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/login_button_rectangle"
+            android:text="Cancel"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:id="@+id/addgoals_bt"
+        android:textAllCaps="false"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/login_button_rectangle"
+        android:text="Add Goals"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

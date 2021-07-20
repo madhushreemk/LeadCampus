@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:id="@+id/relativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:text="Ticket No:">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:id="@+id/txt_ticketno"
+                android:textColor="@color/colorBlack"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:text="Request Date:">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:id="@+id/txt_reqDate"
+                android:textColor="@color/colorBlack"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:text="Lead Id:">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:id="@+id/txt_lead_id"
+                android:textColor="@color/colorBlack"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:text="Student Name:">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:id="@+id/txt_studName"
+                android:textColor="@color/colorBlack"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:text="Mobile No:">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:id="@+id/txt_mobileno"
+                android:textColor="@color/colorBlack"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:text="Request Type:">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:id="@+id/txt_reqType"
+                android:textColor="@color/colorBlack"
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:text="College Name:">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:id="@+id/txt_collgName"
+                android:textColor="@color/colorBlack"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:text="Request Message:">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:id="@+id/txt_reqMsg"
+                android:textColor="@color/colorBlack"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:id="@+id/txt_projectName"
+            android:textColor="@color/colorBlack"
+            />
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:id="@+id/txt_mailid"
+            android:textColor="@color/colorBlack"
+            />
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:id="@+id/txt_managerMailId"
+            android:textColor="@color/colorBlack"
+            />
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:id="@+id/txt_reqHeadId"
+            android:textColor="@color/colorBlack"
+            />
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:id="@+id/txt_mobNo"
+            android:textColor="@color/colorBlack"
+            />
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:background="#368BC1"
+            android:text="Priority"
+            android:layout_gravity="end"
+            android:checked="false"
+            android:textColor="#FFF"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="2dp"
+            android:id="@+id/priority_btn"
+            />
+    </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_height="1dp"
+            android:background="@color/colorBlack"/>
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <TextView
+         android:id="@+id/txt_projName"
+         android:layout_width = "0dp"
+         android:layout_height = "match_parent"
+         android:layout_weight = "2"
+         android:textSize="8sp"
+         android:gravity = "center"
+         android:text = ""
+         android:textAlignment="center"
+         android:textColor="#ffffff"
+         />
+
+     <TextView
+         android:id="@+id/txt_projType"
+         android:layout_width = "0dp"
+         android:layout_height = "match_parent"
+         android:layout_weight = "2"
+         android:textSize="8sp"
+         android:gravity = "center"
+         android:text = ""
+         android:textAlignment="center"
+         android:textColor="#ffffff"
+         />
+
+     <TextView
+         android:id="@+id/txt_approvedamt"
+         android:layout_width = "0dp"
+         android:layout_height = "match_parent"
+         android:layout_weight = "2"
+         android:textSize="8sp"
+         android:gravity = "center"
+         android:lines="4"
+         android:text = ""
+         android:textAlignment="center"
+         android:textColor="#ffffff"
+         />
+
+     <TextView
+         android:id="@+id/txt_dispersedamt"
+         android:layout_width = "0dp"
+         android:layout_height = "match_parent"
+         android:layout_weight = "2"
+         android:gravity = "center"
+         android:textSize="8sp"
+         android:lines="4"
+         android:text = ""
+         android:textAlignment="center"
+         android:textColor="#ffffff"
+         />
+
+
+
+     <ImageView
+         android:id="@+id/img_projStatus"
+         android:layout_width = "0dp"
+         android:layout_height = "match_parent"
+         android:layout_weight = "2"
+         android:gravity = "center"
+         android:text = ""
+         android:textColor="#ffffff"
+         android:src="@drawable/ic_star_yellow_700_36dp"
+         />
+
+     <TextView
+         android:id="@+id/txt_completionamt"
+         android:layout_width = "0dp"
+         android:layout_height = "match_parent"
+         android:layout_weight = "2"
+         android:gravity = "center"
+         android:textSize="8sp"
+         android:lines="4"
+         android:text = ""
+         android:textAlignment="center"
+         android:textColor="#ffffff"
+         />-->
+
+

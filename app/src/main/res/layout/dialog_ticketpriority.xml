@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--<RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit_stfeesradiogroup">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/Stfonlinetrans_RB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Online"
+            android:textSize="14sp"
+            android:textColor="#276ca4"/>
+
+        <RadioButton
+            android:id="@+id/Stfbycash_RB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By Cash"
+            android:layout_marginRight="20dp"
+            android:checked="false"
+            android:textSize="14sp"
+            android:textColor="#276ca4"
+            />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/Stfonlinetrans_no_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:hint="Enter the Transcation number"
+            android:maxLength="25"
+            android:textColor="#276ca4"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 "
+            android:text=""
+            android:visibility="gone"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/StfonlinetransAmount_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:hint="Enter the Amount"
+            android:inputType="number"
+            android:maxLength="5"
+            android:textColor="#276ca4"
+            android:digits="01234567890"
+            android:text=""
+            android:textSize="14dp" />
+        <EditText
+            android:id="@+id/Stfonline_receiptno_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:hint="Remark"
+            android:maxLength="6"
+            android:textColor="#276ca4"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 "
+            android:inputType="text"
+            android:text=""
+            android:textSize="14dp" />
+
+
+
+        <EditText
+            android:id="@+id/StfAmountbycash_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:hint="Enter the Amount"
+            android:maxLength="5"
+            android:textColor="#276ca4"
+            android:digits="01234567890"
+            android:inputType="number"
+            android:text=""
+            android:visibility="gone"
+            android:textSize="14dp" />
+        <EditText
+            android:id="@+id/StfAmountbycash_receiptno_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:hint="Enter the Receipt No"
+            android:maxLength="6"
+            android:textColor="#276ca4"
+            android:inputType="number"
+            android:digits="01234567890"
+            android:text=""
+            android:visibility="gone"
+            android:textSize="14dp" />
+
+
+    </RadioGroup>-->
+    <TextView
+        android:id="@+id/sdetailslist_TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:text="Ticket Priority"
+        android:textSize="18dp" />
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:id="@+id/priority_SP"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="3dp"
+        android:layout_weight=".2"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/stfeessubmitdialog_BT"
+            android:layout_width="wrap_content"
+
+            android:layout_height="35dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="14sp"
+            android:background="@color/green_500"
+            android:textColor="#fff"
+            android:text="Submit"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:text="        "
+            android:textSize="14dp" />
+
+
+        <Button
+            android:id="@+id/stfeescanceldialog_BT"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_height="30dp"
+            android:textSize="14sp"
+            android:background="@color/red"
+            android:textColor="#fff"
+            android:text="Cancel"/>
+    </LinearLayout>
+</LinearLayout>
+    <!--<LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="3dp"
+        android:layout_weight=".2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/sdetailslist_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:text="Details"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sphnolist_TV"
+            android:text="Mobile No"
+            android:textSize="12dp"
+            android:textStyle="italic"
+            android:focusable="false"/>
+
+    </LinearLayout>
+-->
+</RelativeLayout>

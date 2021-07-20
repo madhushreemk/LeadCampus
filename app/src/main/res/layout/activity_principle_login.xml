@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.leadcampusapp.PrincipleLoginActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:text="Select Year: "/>
+        <Spinner
+            android:id="@+id/year_spin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+        </Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/main_layout_principle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="College Name : "
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp" />
+        <TextView
+            android:id="@+id/collg_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="text"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="0dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorBlack"
+            android:text="Registration Count:">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_margin="10dp"
+            android:id="@+id/txt_registration"
+            android:textColor="@color/colorBlack"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorBlack"
+            android:text="Project Count:">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_margin="10dp"
+            android:id="@+id/txt_projCount"
+            android:textColor="@color/colorBlack"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorBlack"
+            android:text="Funded Amount:">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_margin="10dp"
+            android:id="@+id/txt_FundedAmount"
+            android:textColor="@color/colorBlack"
+            />
+    </LinearLayout>
+    <!--<view
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        />-->
+    <LinearLayout
+        android:id="@+id/studentList_LV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Five star project student list"
+        android:textSize="15sp"
+        android:textColor="@color/colorPinkdark"
+        android:layout_gravity="center"/>
+
+        <ListView
+            android:id = "@+id/lv_stud_list"
+            android:layout_marginLeft="3dp"
+            android:layout_gravity="center"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            />
+    </LinearLayout>
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </LinearLayout>
+</LinearLayout>

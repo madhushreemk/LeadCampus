@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lnrlyt_projStatus"
+    android:orientation="vertical">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusableInTouchMode="true"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--<Button
+                       android:id="@+id/btn_submit"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="10dp"
+                       android:textColor="@color/colorBlack"
+                       android:background="@drawable/login_button_rectangle"
+                       android:padding="10dp"
+                       android:text="Submit" />-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:background="@drawable/login_button_rectangle">
+                    <TextView
+                        android:id="@+id/txt_totalCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="left"
+                        android:text="Total Count : "
+                        android:textColor="@android:color/holo_green_light" />
+
+
+                    <TextView
+                        android:id="@+id/txt_actualTotalCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="left"
+                        android:textColor="#000" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="Submit"
+                        android:textColor="#FFF"
+                        android:theme="@style/SubmitButton" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:text="Select College"/>
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:id="@+id/spin_college">
+                </androidx.appcompat.widget.AppCompatSpinner>
+
+              <!--  <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_searchProject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorBlack"
+                    android:textColor="@color/colorBlack"
+                    >
+
+                    <EditText
+                        android:id="@+id/etSearch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Search criteria"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack"
+                        android:textSize="15sp"
+                        android:background="@drawable/edittext_bottom_line"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:clipToPadding="false"
+                        android:focusable="true">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/small_tshirt"
+                            android:orientation="vertical">
+                           <!-- <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:paddingRight="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/pending_home"/>-->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="25sp"
+                                android:layout_marginTop="5dp"
+                                android:textStyle="bold"
+                                android:text="S"/>
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/cart_badge_S"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="end|left"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/badge_background"
+                            android:textColor="#000"
+                            android:textStyle="bold"
+                            android:textSize="11sp" />
+
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="25dp"
+                        android:clipToPadding="false"
+                        android:focusable="true">
+                        <LinearLayout
+                            android:id="@+id/medium_tshirt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <!--<ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:paddingRight="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/approve_home"/>-->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="25sp"
+                                android:layout_marginTop="5dp"
+                                android:textStyle="bold"
+                                android:text="M"/>
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/cart_badge_M"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/badge_background"
+                            android:gravity="end|left"
+                            android:textColor="#000"
+                            android:textStyle="bold"
+                            android:textSize="11sp" />
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_marginRight="25dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:focusable="true">
+                        <LinearLayout
+                            android:id="@+id/large_tshirt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <!--<ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:paddingRight="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/completed_home"/>-->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="25sp"
+                                android:layout_marginTop="5dp"
+                                android:textStyle="bold"
+                                android:text="L"/>
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/cart_badge_L"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="end|left"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/badge_background"
+                            android:textColor="#000"
+                            android:textStyle="bold"
+                            android:textSize="11sp" />
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="25dp"
+                        android:clipToPadding="false"
+                        android:focusable="true">
+                        <LinearLayout
+                            android:id="@+id/x_large_tshirt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <!--<ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:paddingRight="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/approve_home"/>-->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="25sp"
+                                android:layout_marginTop="5dp"
+                                android:textStyle="bold"
+                                android:text="XL"/>
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/cart_badge_XL"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:background="@drawable/badge_background"
+                            android:gravity="end|left"
+                            android:textColor="#000"
+                            android:textStyle="bold"
+                            android:textSize="11sp" />
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:clipToPadding="false"
+                        android:focusable="true">
+                        <LinearLayout
+                            android:id="@+id/xx_large_tshirt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <!--<ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:paddingRight="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/approve_home"/>-->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="25sp"
+                                android:layout_marginTop="5dp"
+                                android:textStyle="bold"
+                                android:text="XXL"/>
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/cart_badge_XXL"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:background="@drawable/badge_background"
+                            android:gravity="end|left"
+                            android:textColor="#000"
+                            android:textStyle="bold"
+                            android:textSize="11sp" />
+                    </FrameLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:gravity="end"
+                    android:layout_gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBlack"
+                        android:id="@+id/txt_selectAll"
+                        android:text="Select All"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/chk_selectAll"
+                        android:buttonTint="@color/colorBlack" />
+
+                </LinearLayout>
+
+
+
+                <com.leadcampusapp.NonScrollListView
+                    android:id = "@+id/listview_tShirtUnpaid"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content" />
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    android:focusableInTouchMode="true"
+    tools:context="com.android.sripad.leadnew_22_6_2018.com.leadcampusapp.LoginActivity">
+
+ <ScrollView android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     >-->
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/lnrlyt_customStudent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+ <ScrollView
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"
+     xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+ <LinearLayout
+     android:id="@+id/LinearLayout02"
+     android:layout_height="wrap_content"
+     android:layout_width="match_parent"
+     android:padding="10dp"
+     android:orientation="vertical">
+
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:text="Request To Manager"
+      android:layout_gravity="center"
+      android:textColor="@color/colorBlack"/>
+
+
+
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:weightSum="3.2"
+     android:orientation="horizontal">
+
+  <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1.5"
+      android:orientation="vertical">
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:paddingTop="20dp"
+       android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="State Name"
+        android:textColor="@color/colorBlack"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:textSize="18dp"
+        android:id="@+id/request_statename_et"
+        android:textColor="@color/colorBlack">
+    </EditText>
+
+   </LinearLayout>
+  </LinearLayout>
+
+
+  <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="0.2">
+  </LinearLayout>
+
+
+
+  <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1.5"
+      android:orientation="vertical">
+
+
+
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:paddingTop="20dp"
+       android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="District Name"
+        android:textColor="@color/colorBlack"/>
+
+    <EditText
+        android:id="@+id/request_districtname_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:text=" "
+        android:textSize="18dp"
+        android:paddingLeft="5dp"
+        android:textColor="@color/colorBlack">
+    </EditText>
+
+   </LinearLayout>
+  </LinearLayout>
+ </LinearLayout>
+
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:weightSum="3.2"
+     android:orientation="horizontal">
+
+  <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1.5"
+      android:orientation="vertical">
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:paddingTop="20dp"
+       android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Taluka Name"
+        android:textColor="@color/colorBlack"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:textSize="18dp"
+        android:id="@+id/request_talukaname_et"
+        android:textColor="@color/colorBlack">
+    </EditText>
+
+   </LinearLayout>
+  </LinearLayout>
+
+
+  <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="0.2">
+  </LinearLayout>
+
+
+
+  <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1.5"
+      android:orientation="vertical">
+
+
+
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:paddingTop="20dp"
+       android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="College Name"
+        android:textColor="@color/colorBlack"/>
+
+    <EditText
+        android:id="@+id/request_Collegename_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:text=" "
+        android:textSize="18dp"
+        android:paddingLeft="5dp"
+        android:textColor="@color/colorBlack">
+    </EditText>
+
+   </LinearLayout>
+  </LinearLayout>
+ </LinearLayout>
+
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="1dp"
+     android:text="Enter Name"
+     android:textSize="12sp"
+     android:textColor="@color/colorBlack"/>
+ <EditText
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:id="@+id/request_studentname_et"
+     android:background="@drawable/edittext_bottom_line"
+     android:textColor="@color/colorBlack"
+     android:hint="Enter your name" />
+
+
+
+  <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:text="Enter Email ID"
+      android:textSize="12sp"
+      android:textColor="@color/colorBlack"/>
+
+ <com.google.android.material.textfield.TextInputLayout
+     android:id="@+id/til_mailId"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="10dp"
+     android:textColorHint="@color/colorBlack"
+     android:textColor="@color/colorBlack"
+     >
+
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/edt_mailId"
+      android:background="@drawable/edittext_bottom_line"
+      android:textColor="@color/colorBlack"
+      android:hint="Email ID" />
+ </com.google.android.material.textfield.TextInputLayout>
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="20dp"
+     android:text="Write the descrption where you are facing problem to update the profile"
+     android:textSize="12sp"
+     android:textColor="@color/colorBlack"/>
+
+ <com.google.android.material.textfield.TextInputLayout
+     android:id="@+id/til_description"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="10dp"
+     android:textColorHint="@color/colorBlack"
+     android:textColor="@color/colorBlack"
+     >
+
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/edt_description"
+      android:background="@drawable/edittext_bottom_line"
+      android:hint="Enter the Description"
+      />
+ </com.google.android.material.textfield.TextInputLayout>
+
+
+ <Button
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:textColor="@color/colorBlack"
+     android:id="@+id/btn_sendRequest"
+     android:textAllCaps="false"
+     android:layout_marginTop="15dp"
+     android:background="@drawable/login_button_rectangle"
+     android:text="Send Request"/>
+
+
+<!-- <com.google.android.material.textfield.TextInputLayout
+     android:id="@+id/til_actionplan"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="10dp"
+     android:textColorHint="#cccccc"
+     android:textColor="#ffffff"
+     >
+
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/edittext_bottom_line"
+      android:hint="Mail Id" />
+ </com.google.android.material.textfield.TextInputLayout>-->
+
+
+
+</LinearLayout>
+ </ScrollView>
+ </LinearLayout>
+<!--
+</ScrollView>
+ </RelativeLayout>-->

@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:layout_gravity="center"
+        android:weightSum="2"
+        android:background="#2E1E91"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/txt_name"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:text="Name"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/txt_studentid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="MG03366"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_title"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="10dp"
+            android:textColorHint="#ffffff"
+            android:textColor="@color/colorBlack"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bottom_line"
+                android:hint="Title Of The Project (What is your idea)*"
+                android:textColorHint="@color/colorBlack"
+                android:inputType="textMultiLine|textLongMessage"
+                android:textColor="@color/colorBlack"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Project Type *"
+                android:textColor="@color/colorBlack"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:id="@+id/spin_projectType">
+            </androidx.appcompat.widget.AppCompatSpinner>
+
+        </LinearLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_noOfBeneficiaries"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="30dp"
+            android:textColorHint="@color/colorBlack"
+            android:textColor="@color/colorBlack"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edt_noOfBeneficiaries"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bottom_line"
+                android:textColorHint="@color/colorBlack"
+                android:hint="Total No. of benficiaries(How many people helped by the project)*"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="@color/colorBlack"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_objective"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="30dp"
+            android:textColorHint="@color/colorBlack"
+            android:textColor="@color/colorBlack"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edt_objective"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bottom_line"
+                android:textColorHint="@color/colorBlack"
+                android:hint="Objectives of the project(Why you want to implement the idea?)*"
+                android:inputType="textMultiLine|textLongMessage"
+                android:textColor="@color/colorBlack"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_actionplan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="30dp"
+            android:textColorHint="@color/colorBlack"
+            android:textColor="@color/colorBlack"
+            >
+
+            <EditText
+                android:id="@+id/edt_actionplan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bottom_line"
+                android:textColorHint="@color/colorBlack"
+                android:hint="Action Plan(How you want to implement your idea?)*"
+                android:inputType="textMultiLine|textLongMessage"
+                android:textColor="@color/colorBlack"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+      <!--  <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_materialCost"
+            android:padding="10dp"
+            android:textColor="@color/colorWhite"
+            android:orientation="vertical">
+        </LinearLayout>-->
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_gravity="center"
+            android:layout_height="fill_parent"
+            android:paddingTop="10dp"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:id="@+id/table_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" >
+            </TableLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/table_main"
+            android:layout_gravity="end"
+            android:paddingRight="100dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:padding="3dp"
+                    android:text="Total : "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="1000"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_pmcomment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="10dp"
+            android:textColorHint="@color/colorBlack"
+            android:textColor="@color/colorBlack"
+            >
+
+            <EditText
+                android:id="@+id/edt_pmcomment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bottom_line"
+                android:textColorHint="@color/colorBlack"
+                android:hint="PM Comments"
+                android:inputType="textMultiLine|textLongMessage"
+                android:textColor="@color/colorBlack"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:layout_gravity="center"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:paddingTop="30dp"
+            android:layout_weight="1"
+            android:textColorHint="@color/colorBlack"
+            android:textColor="@color/colorBlack"
+            >
+
+            <EditText
+                android:id="@+id/edt_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/edittext_bottom_line"
+                android:textColorHint="@color/colorBlack"
+                android:hint="Amount"
+                android:inputType="textMultiLine|textLongMessage"
+                android:textColor="@color/colorBlack"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+               android:layout_gravity="center">
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/btn_save"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                android:background="@drawable/login_button_rectangle"
+                android:text="Save"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="end">
+                <Button
+                    android:layout_width="match_parent"
+                    android:id="@+id/btn_close"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorBlack"
+                    android:background="@drawable/login_button_rectangle"
+                    android:text="Close"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:layout_gravity="center"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="5dp"
+            android:layout_weight="1"
+            android:paddingRight="5dp">
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/btn_approved"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textColor="@color/colorBlack"
+                android:background="@drawable/login_button_rectangle"
+                android:text="Approved"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp">
+
+            <Button
+                android:id="@+id/btn_reapply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_button_rectangle"
+                android:text="Reapply"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">LEADCampus</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="noOfBeneficiaries">How many people will be helped by the project?</string>
+
+    <string name="whoareBeneficiaries">Who are they?</string>
+
+    <string name="noOfBeneficiariesinnumber">How many?</string>
+
+    <string name="contextpackage">com.leadcampusapp.EventsActivity</string>
+
+    <string name="hint"><font size="20">Hint!</font></string>
+    <string name="cellnumber"><font size="13"><i>Enter WhatsApp/Alternative number</i></font></string>
+    <string name="entermailid"><font size="13"><i>Enter Email ID</i></font></string>
+    <string name="mytalent"><font size="13"><i>Enter Talent ex:(painting,plantation)</i></font></string>
+    <string name="aadharanumber"><font size="13"><i>Enter Aadhaar No</i></font></string>
+    <string name="accountno"><font size="13"><i>Enter Account No</i></font></string>
+    <string name="iifsccode"><font size="13"><i>Enter IFSC Code</i></font></string>
+    <string name="studentname"><font size="13">Student Name</font></string>
+    <string name="dateenter"><font size="13">DD-MM-YYYY</font></string>
+    <string name="aboutuscontent1">
+        "The LEaders Accelerating Development (LEAD) Program of Deshpande Foundation, Hubballi, Karnataka fosters innovative and entrepreneurial thinking within college students by exposing them to social issues and by encouraging them to volunteer their time and effort into the community. LEAD ignites their latent talent to come up with creative solutions and implement the same. LEAD is an incubator where innovation meets implementation, knowledge meets experience, social issues meet solutions and efforts meet impact.\n\n"
+        "Through the unique platform provided by LEAD, more than 35000 students from more than 210 colleges throughout Karnataka, Maharashtra, Telangana, Andhra Pradesh, Uttar Pradesh and Punjab are implementing bold solutions to small and big problems in their communities while simultaneously building their self-confidence and developing important leadership skills.\n\n"
+        "LEAD believes in shaping the youth’s personality to be a great human by building the LEADership qualities. This process involves several aspects.With numerous concepts to support the leadership growth and entrepreneurial ability among college youth, LEAD organizes value addition programs and various events to mark its achievements.\n"
+
+    </string>
+
+    <string name="aboutuscontent2">
+        "Over the years, we have had great idea and plot to bring in action out of which few are\n\n"
+        "\t\t \u25CF\t\t NIRANJAN KARGI\n"
+        "\t\t\t\tMr Niranjan Kargi, A Mechanical Engineer of  Belagavi is a consistent contributor to innovative products serving needs of the society. NIRNAL (Water Purifier) is a compatible, portable, reusable, healthy and an eco-friendly water purifier. This acts like a filter when the water oozes out of Nirnal fixed to the bottles. It is easy to use and also imparts taste and some essential minerals to the water at only Rs.20.\n\n\n\n"
+        "\t\t \u25CF\t\t VIMALA KADAM\n"
+        "\t\t\t\tLEADer Vimala Kadam from Chikodi observed a major issue i’e defecating in open and took a huge stand with the help of Gram Panchayat under Swaach Bharat Yojana, by helping villagers build toilets in their house. With the huge count of 1425 toilets, LEADer Vimala now sets a great example for determination and courage to make a change in society.\n\n"
+        "The list goes on with many more changes that have taken place over the years. Our Vision is clear and all we will do is Join hands and not just think about the change but also get the change.\n\n\n"
+    </string>
+
+    <string name="aboutuscontent3">"GENESIS"</string>
+
+    <string name="aboutuscontent4">"The inception of LEAD happened in the year 2008 when Naveen Jha heard the ideas of students who wanted to make a positive impact in the society. There were about 80 active students from the group "Colors of Youth", who came up with creative ideas for the development of the community. Named as "Colors of Youth", they were brainstormed and implemented few innovative projects such as making fuel from biomass, promoting open source software, setting up a viable traffic control system and many other interesting ideas.\n"</string>
+
+    <string name="aboutuscontent5">"The success of "Colors of Youth", supported by Deshpande Foundation led to increasing the number of projects and as well the number of energetic students. This is where the need for the separate program was felt. Hence on Aug.15, 2008, LEAD was formed.\n"</string>
+
+    <string name="aboutuscontent6">"With a small team to a huge family was a process of learning and giving back to society in LEAD and this scale was made possible with the dedicated and leading efforts by Ajay Suman Shukla. He became the part of LEAD in 2009 and scaled the program from initial three districts to 21 districts and in six states. LEAD Prayana, LEAD Leadership Program, LEAD Internship are the value added additions to LEAD and made possible with his leadership, approach of inventing new to the program and passionate team. Sharing this team with you is a matter of trust to acquire.\n\n"</string>
+
+    <string name="leadProgram"><font size="16">" LLP is a ten days long unique residential camp, it emphasizes practical exposure over classroom learning. The Leadership Program combines hands-on learning experience in understanding practically leadership, team building, critical thinking, creativity and entrepreneurial mindset through inspiring guest speaker sessions, individual mentorship, activities, leadership actions and live exposure visits to industries and community-based organizations in order to foster practical, critical and creative thinking ability within the students"</font></string>
+
+    <string name="leadPrayana"><font size="16">" LP With the aim to "unleash your leadership potential", join us for a memorable 1800km journey (Uttar Pradesh 5000kms) of a lifetime. Two week fun-filled days you will meet and hear from more than 10 inspiring role models and speakers, see their extraordinary work, visit more than 8 destinations, take part in panel sessions, explore more than 12 unique organizations, institutions, MNC's and industries and create your own groups to share your hands-on experiential learning and build entrepreneurial and leadership mindset."</font></string>
+
+    <string name="leadYuvaSummit"><font size="16">"Hosting an annual event is a prideful moment for LEAD. LEADers across —- states reach out at Hubballi where the best of best speakers, entrepreneurs and many such amazing personalities meet up to encounter the youth. Project showcasing, LEAD Talk, Guest and alumni talk, etc are lined up for the day followed by an award ceremony in the evening in presence of amazing guest panel."</font></string>
+
+    <string name="leadValedictory"><font size="16">" LV is celebrated to commemorate the hard work, innovation and achievement of young leaders of this particular year. LEAD Valedictory is also the time to start thinking about the year to come. LEADers were promoted to Master LEADer in order to start their journey in promoting LEAD throughout their colleges and helping to unleash the leadership potential in those students around them. This day for the LEADers is the next step in the LEAD levels and a great achievement."</font></string>
+
+    <!-- <string name="leadTalaash"><font size="16">"LEAD Talaash fosters innovative and entrepreneurial thinking within college students by exposing them to social issues.  Talaash encourages students to come up with their own idea, create and present a working model of their idea, understand and work on its business viability and finally prove yourself as a budding Technopreneur."</font></string>-->
+
+
+    <string-array name="types">
+        <item>Mobile</item>
+        <item>Office</item>
+        <item>Home</item>
+    </string-array>
+    <string name="title_activity_test">TestActivity</string>
+
+
+    <string name="state">Select the State</string>
+    <string name="district">Select District</string>
+
+
+    <string name="txtdateformat">yyyyMMdd_HHmmss</string>
+    <string name="txtFileDocumentUploadImg">DocumentUploadedIMG_</string>
+    <string name="txtFileExtension">.png</string>
+    <string name="title_activity_chats">ChatsActivity</string>
+
+    <string name="listOfProjectsBlue"><font color="#0000FF">List Of Projects</font></string>
+    <string name="title_activity_guest_login">GuestLoginActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Wel-Come</string>
+    <string name="nav_header_subtitle">Guest User</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string-array name="guestsidebar">
+        <item>Story</item>
+        <item>Events</item>
+        <item>About Us</item>
+        <item>Contact Us</item>
+    </string-array>
+
+    <string name="server_client_ID_type3">830064162862-nohid6fk5j27f2g6fvc0qdrn81pumdkg.apps.googleusercontent.com</string>
+    <string name="alert"><font fgcolor='#FFFF3B30'>Alert!</font></string> <!--red-->
+    <string name="forgotpin"><font fgcolor='#FFFF3B30'>Forgot PIN</font></string> <!--red-->
+
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="30dp"
+    android:layout_margin="10dp">
+
+
+    <TextView
+        android:id="@+id/requestlabel_TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Request Type"
+        android:textSize="18sp"
+        android:gravity="start"
+        android:textColor="#000" />
+    <Spinner
+        android:id="@+id/requesttype_SP"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:hint="Select"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        />
+
+
+
+    <TextView
+        android:id="@+id/projectTitleLabel_TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Project Title"
+        android:textSize="18sp"
+        android:gravity="start"
+        android:textColor="#000"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"/>
+    <Spinner
+        android:id="@+id/projectTitle_SP"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:hint="Select"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:visibility="gone"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        />
+
+
+    <TextView
+        android:id="@+id/prioritylabel_TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Priority"
+        android:textSize="18sp"
+        android:gravity="start"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"/>
+    <Spinner
+        android:id="@+id/priority_SP"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:hint="Select"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        />
+
+
+    <TextView
+        android:id="@+id/msglabel_TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Message"
+        android:textSize="18sp"
+        android:gravity="start"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/msg_ET"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:inputType="textMultiLine"
+        android:textColor="#354049"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shap"/>
+
+    <Button
+        android:id="@+id/go_BT"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="29dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="10dp"
+        android:textColor="#FFFFFF"
+        android:text="Apply Request"
+        android:fontFamily="sans-serif"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:background="#3F51B5"/>
+
+
+</LinearLayout>
+
+</ScrollView>

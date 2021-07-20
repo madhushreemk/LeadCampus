@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- End current session if app sleeps for a period of time -->
+    <integer name="ga_sessionTimeout">300</integer>
+
+    <!-- Enable automatic Activity measurement -->
+    <bool name="ga_autoActivityTracking">true</bool>
+
+    <!--  The property id associated with this analytics tracker -->
+    <!--UA-126892791-1-->
+    <!--UA-126729086-1-->
+
+    <string name="ga_trackingId">UA-126892791-1</string>
+
+    <string name="ga_sampleFrequency">100.0</string>
+
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+
+
+    <screenName name="com.leadcampusapp.SplashActivity">Flash Logo Screen</screenName>
+
+    <screenName name="com.leadcampusapp.LoginActivity">Login Screen</screenName>
+
+    <screenName name="com.leadcampusapp.HomeActivity">Student Home Screen</screenName>
+
+    <screenName name="com.leadcampusapp.EditProfileActivity">Student EditProfile Screen</screenName>
+
+    <screenName name="com.leadcampusapp.ProjectDetails">Student ProjectDetails</screenName>
+
+    <screenName name="com.leadcampusapp.EventsActivity">Student Events</screenName>
+
+    <screenName name="com.leadcampusapp.NewsFeedsActivity">NewsFeeds Screen</screenName>
+
+    <screenName name="com.leadcampusapp.EditProjectActivity">Student EditProject Screen</screenName>
+
+    <screenName name="com.leadcampusapp.AboutUsActivity">AboutUs Screen</screenName>
+
+    <screenName name="com.leadcampusapp.PMProjectDetailActivity">PMProjectDetail Screen</screenName>
+
+    <screenName name="com.leadcampusapp.PMUnapproved_DetailsActivity">PMUnapproved_Details Screen</screenName>
+
+    <screenName name="com.leadcampusapp.PMComplitionProjectActivity">PMComplitionProject Screen</screenName>
+
+    <screenName name="com.leadcampusapp.PMEditProfileActivity">PMEditProfile Screen</screenName>
+
+    <screenName name="com.leadcampusapp.PMApproved_DetailsActivity">PMApproved_Details Screen</screenName>
+
+    <screenName name="com.leadcampusapp.ContactUsActivity">ContactUs Screen</screenName>
+
+    <screenName name="com.leadcampusapp.StoryBlogActivity">StoryBlog Screen</screenName>
+
+    <screenName name="com.leadcampusapp.LeadStoryActivity">LeadStory Screen</screenName>
+
+    <screenName name="com.leadcampusapp.NotificationHistoryActivity">Student NotificationHistory Screen</screenName>
+
+    <screenName name="com.leadcampusapp.PMNotificationHistoryActivity">Student PMNotificationHistory Screen</screenName>
+
+    <screenName name="com.leadcampusapp.TShirtPaidActivity">PMTShirtPaid Screen</screenName>
+
+    <screenName name="com.leadcampusapp.TShirtPaidActivity">Student FinalProjectCompletion Screen</screenName>
+
+    <screenName name="com.leadcampusapp.GuestLoginActivity">GuestLogin Screen</screenName>
+
+    <screenName name="com.leadcampusapp.PMHomeActivity">PM Home Screen</screenName>
+
+
+
+    <!--
+      See Project Structure -> Analytics -> Google Analytics -> Learn More
+      to learn more about configuring this file.
+    -->
+</resources>

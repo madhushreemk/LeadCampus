@@ -1,0 +1,17 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_expanded="true" android:drawable="@drawable/baseline_keyboard_arrow_down_black_18dp" />
+    <item android:drawable="@drawable/baseline_keyboard_arrow_right_black_18dp" />
+</selector>
+
+<!--
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_expanded="true" android:drawable="@drawable/ic_keyboard_arrow_down_white_24dp" />
+    <item android:drawable="@drawable/ic_add_white_36dp" />
+</selector>
+sharp_chevron_right_24
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/add_white"
+        android:state_empty="true" />
+    <item android:drawable="@drawable/remove_white"
+        android:state_expanded="true" />
+</selector>-->

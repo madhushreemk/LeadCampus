@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="@drawable/background"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id = "@+id/relativeLayout1"
+            android:layout_width = "fill_parent"
+            android:layout_height = "wrap_content"
+            >
+
+            <TextView
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "2"
+                android:gravity = "center"
+                android:padding = "5dp"
+                android:text = "Name"
+                android:textColor="#ffffff"
+                />
+
+            <TextView
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "2"
+                android:gravity = "center"
+                android:padding = "5dp"
+                android:text = "College"
+                android:textColor="#ffffff"
+                />
+
+            <TextView
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "2"
+                android:gravity = "center"
+                android:padding = "5dp"
+                android:lines="4"
+                android:text = "Project Tittle"
+                android:textColor="#ffffff"
+                />
+
+            <TextView
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "2"
+                android:gravity = "center"
+                android:padding = "5dp"
+                android:text = "Budget"
+                android:textColor="#ffffff"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_searchProject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginTop="60dp"
+        android:textColorHint="@color/colorBlack"
+        android:textColor="@color/colorBlack"
+        >
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:hint="Search for any fields"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:textSize="15sp"
+            android:background="@drawable/edittext_bottom_line"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+<ListView
+    android:id="@+id/listView1"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="3dp"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+</ListView>
+<ListView
+    android:id = "@+id/lv_PMunapproved"
+    android:layout_marginLeft="3dp"
+    android:layout_gravity="center"
+    android:layout_width = "match_parent"
+    android:layout_height = "wrap_content"
+    />
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+</LinearLayout>

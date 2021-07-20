@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_marginTop="30dp"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="300dp"
+     />
+
+    <ImageView
+        android:id="@+id/img_delete_gallery"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/delete_img"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:visibility="visible"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignBottom="@+id/imageView"/>
+
+
+    <Gallery
+        android:id="@+id/gallery"
+        android:layout_marginTop="20dp"
+        android:unselectedAlpha="0.25"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

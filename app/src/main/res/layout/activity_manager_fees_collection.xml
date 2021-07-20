@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".ManagerFeesCollectionActivity">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp"
+        android:text="Fees category"/>
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:id="@+id/spin_feesCategory">
+    </androidx.appcompat.widget.AppCompatSpinner>
+
+    <RadioGroup
+        android:id="@+id/registration_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rdb_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonNewRegClicked"
+            android:backgroundTint="#ffffff"
+            android:checked="true"
+            android:textSize="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registration"/>
+        <RadioButton
+            android:id="@+id/rdb_newRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonNewRegClicked"
+            android:layout_marginLeft="10dp"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Registration"/>
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/leadId_rl"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_searchProject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="45dp"
+            android:textColorHint="@color/colorBlack"
+            android:textColor="@color/colorBlack"
+            >
+
+            <EditText
+                android:id="@+id/etLeadId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search Lead ID"
+                android:maxLength="9"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                android:textSize="15sp"
+                android:background="@drawable/edittext_bottom_line"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/search_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/search"
+             />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/red"/>
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:textSize="15sp"
+                android:layout_marginRight="5dp"
+                android:textColorHint="@color/colorGrey"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/edittext_bottom_line"
+                android:textColor="@color/colorBlack"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mobile"
+                android:textColor="@color/red"/>
+
+            <EditText
+                android:id="@+id/etMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile"
+                android:textSize="15sp"
+                android:maxLength="10"
+                android:layout_marginLeft="1dp"
+                android:textColorHint="@color/colorGrey"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/edittext_bottom_line"
+                android:textColor="@color/colorBlack"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <!-- State -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="College State*"
+                android:id="@+id/statelabel_TV"
+                android:textColor="@color/red"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/stateerror_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#cccccc" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spin_state"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:baselineAligned="false"
+                    android:textColorHint="@color/colorGrey"/>
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/statesearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                    android:hint="Search State"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <!-- District -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="College District*"
+                android:id="@+id/districtlabel_TV"
+                android:textColor="@color/red"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/districterror_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    />
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:prompt="@string/district"
+                    android:textColorHint="@color/colorWhite"
+                    android:id="@+id/spin_district"
+                    >
+                </androidx.appcompat.widget.AppCompatSpinner>
+                <AutoCompleteTextView
+                    android:id="@+id/districtsearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:textColorHint="@color/colorWhite"
+                    android:textColor="@color/colorWhite"
+                    android:hint="Search District"
+                    android:visibility="gone"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <!-- City -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="College City*"
+                android:id="@+id/citylabel_TV"
+                android:textColor="@color/red"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/cityerror_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    />
+
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:id="@+id/spin_city"
+
+                    android:textColor="@color/colorWhite"
+                    >
+                </androidx.appcompat.widget.AppCompatSpinner>
+
+                <AutoCompleteTextView
+                    android:id="@+id/citysearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:textColorHint="@color/colorWhite"
+                    android:textColor="@color/colorWhite"
+                    android:hint="Search City"
+                    android:visibility="gone"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <!-- Course -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Course*"
+                android:id="@+id/courselabel_TV"
+                android:textColor="@color/red"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/spin_program">
+            </androidx.appcompat.widget.AppCompatSpinner>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Institution*"
+                android:id="@+id/institutionlabel_TV"
+                android:textColor="@color/red"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/collegeerror_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    />
+
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:id="@+id/spin_institution"
+                    android:textColorHint="@color/colorGrey"
+                    >
+                </androidx.appcompat.widget.AppCompatSpinner>
+
+                <AutoCompleteTextView
+                    android:id="@+id/collegesearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:textColorHint="@color/colorWhite"
+                    android:textColor="@color/colorWhite"
+                    android:hint="Search College"
+                    android:visibility="gone"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email ID*"
+            android:id="@+id/emailidlable_TV"
+            android:textColor="@color/red"/>
+
+        <EditText
+            android:id="@+id/emailid_ET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/entermailid"
+            android:textSize="15sp"
+            android:textColorHint="@color/colorGrey"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edittext_bottom_line"
+            android:textColor="@color/colorBlack"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Amount*"
+                android:id="@+id/amount_TV"
+                android:textColor="@color/red"/>
+
+            <EditText
+                android:id="@+id/amount_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Amount"
+                android:textSize="15sp"
+                android:layout_marginTop="12dp"
+                android:textColorHint="@color/colorGrey"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/edittext_bottom_line"
+                android:textColor="@color/colorBlack"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Payment Mode*"
+                android:id="@+id/paymentModelabel_TV"
+                android:textColor="@color/red"/>
+            <TextView
+                android:id="@+id/paymentmodeerror_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                />
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:textColor="@color/colorBlack"
+                android:layout_gravity="center"
+                android:id="@+id/spin_paymentmode">
+            </androidx.appcompat.widget.AppCompatSpinner>
+
+
+        </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Payment Date*"
+                android:id="@+id/doblabel_tv"
+                android:textColor="@color/red"/>
+
+            <!--<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edt_dob"
+                android:clickable="true"
+                android:text="DD/MM/YYYY"
+                android:background="@drawable/edittext_bottom_line"
+                android:paddingTop="2dp"
+                android:textColor="@color/colorWhite"/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <EditText
+                    android:id="@+id/edt_paymentDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_bottom_line"
+                    android:baselineAligned="false"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/dateenter"
+                    android:inputType="none"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorGrey"
+                    android:textSize="15sp" />
+
+
+                <EditText
+                    android:id="@+id/dobseterror_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:background="@drawable/edittext_bottom_line_white"
+                    android:text=" " />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Remark*"
+                android:id="@+id/remark_TV"
+                android:textColor="@color/red"/>
+
+            <EditText
+                android:id="@+id/remark_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Remark"
+                android:textSize="15sp"
+                android:textColorHint="@color/colorGrey"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/edittext_bottom_line"
+                android:textColor="@color/colorBlack"/>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"/>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

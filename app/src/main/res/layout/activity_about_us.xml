@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context="com.leadcampusapp.EditProfileActivity">
+
+
+
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollViewDrawer"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:layout_editor_absoluteY="8dp"
+    tools:layout_editor_absoluteX="8dp">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.android.sripad.leadnew_22_6_2018.com.leadcampusapp.AboutUsActivity">
+
+
+
+   <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/aboutus"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:scaleType="fitXY"
+      />
+
+  <!--  <com.android.sripad.leadnew_22_6_2018.justify.JustifyTextView
+        android:id="@+id/justified_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textSize="18sp"
+        android:text="@string/aboutuscontent1"
+        android:lineSpacingMultiplier="1.1"
+        />-->
+ <com.codesgood.views.JustifiedTextView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:paddingTop="8dp"
+     android:gravity="right|left"
+     android:textAlignment="gravity"
+     android:lineSpacingExtra="3dp"
+     android:text="@string/aboutuscontent1"
+     android:textSize="14sp"
+     android:layout_marginBottom="5dp"/>
+
+    <!--<ExpandableListView
+        android:id="@+id/expandableListView"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:cacheColorHint="#00000000"/>-->
+
+   <!-- <ExpandableListView
+        android:id="@+id/expandableListView"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+        android:divider="@color/colorBlack"
+        android:groupIndicator="@drawable/custom_expandable"
+        android:dividerHeight="0.5dp" />-->
+ <!--<ExpandableListView
+     android:id="@+id/expandableListView"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:groupIndicator="@drawable/custom_expandable" />-->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+        <ExpandableListView
+            android:id="@+id/expandableListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:groupIndicator="@drawable/custom_expandable" >
+        </ExpandableListView>
+    </LinearLayout>
+
+<!--    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="viewStart"
+        android:text="LEAD PRAYANA"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LEAD PRAYANA- With the aim to unleash your leadership potential, join us for a memorable 1800km journey (Uttar Pradesh 5000kms) of a lifetime. Two week fun-filled days you will meet and hear from more than 10 inspiring role models and speakers, see their extraordinary work, visit more than 8 destinations, take part in panel sessions, explore more than 12 unique organizations, institutions, MNC's and industries and create your own groups to share your hands-on experiential learning and build entrepreneurial and leadership mindset."
+        />-->
+
+   <!--   <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+          android:paddingTop="10dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:text="@string/aboutuscontent2"/>-->
+    <com.codesgood.views.JustifiedTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:lineSpacingExtra="3dp"
+        android:text="@string/aboutuscontent3"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="6dp"
+        />
+
+    <com.codesgood.views.JustifiedTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="3dp"
+        android:textSize="14sp"
+        android:text="@string/aboutuscontent4"/>
+
+    <com.codesgood.views.JustifiedTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="3dp"
+        android:textSize="14sp"
+        android:text="@string/aboutuscontent5"/>
+
+    <com.codesgood.views.JustifiedTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="3dp"
+        android:textSize="14sp"
+        android:text="@string/aboutuscontent6"/>
+
+
+</LinearLayout>
+</ScrollView>
+
+</RelativeLayout>

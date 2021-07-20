@@ -1,0 +1,1552 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:visibility="visible"
+            android:id="@+id/lnrlyt_viewProfile"
+            android:orientation="vertical">
+
+
+            <!--  <RelativeLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+
+
+
+
+
+
+
+              <ImageView
+                  android:layout_width="100dp"
+                  android:layout_height="100dp"
+                  android:id="@+id/img_studProfPick"
+                  android:scaleType="fitXY"
+                  android:src="@drawable/devanand"/>
+
+               <ImageView
+                   android:layout_width="80dp"
+                   android:layout_height="50dp"
+                   android:id="@+id/img_studCrown"
+                   android:scaleType="fitXY"
+                   android:src="@drawable/crown_man"
+                   android:layout_alignParentTop="true"
+                   android:layout_centerHorizontal="true" />
+
+              </RelativeLayout>-->
+
+            <!--    <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                 <ImageView
+                     android:layout_width="100dp"
+                     android:layout_height="100dp"
+                     android:id="@+id/img_studProfPick"
+                     android:scaleType="fitXY"
+                     android:src="@drawable/devanand"/>
+
+                 <ImageView
+                     android:id="@+id/filter_check"
+                     android:layout_width="100dp"
+                     android:layout_height="10dp"
+                     android:layout_gravity="right"
+                     android:background="@drawable/crown_man" />
+
+
+                </FrameLayout>-->
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+                <!--       <ImageView
+                           android:layout_width="100dp"
+                           android:layout_height="100dp"
+                           android:visibility="invisible"
+                           android:id="@+id/img_studProfPick1"
+                           android:scaleType="fitXY"
+                           android:src="@drawable/devanand"
+                         />-->
+
+                <!--  <RelativeLayout
+                      android:layout_gravity="center"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content">
+
+                      <ImageView
+                          android:layout_width="100dp"
+                          android:layout_height="100dp"
+                          android:id="@+id/img_studProfPick1"
+                          android:src="@drawable/temp_mm"
+                          />
+                     &lt;!&ndash; <ImageView
+                          android:layout_width="35dp"
+                          android:layout_height="35dp"
+                          android:src="@drawable/star"
+                          android:visibility="gone"
+                          />&ndash;&gt;
+                      <ImageView
+                          android:id="@+id/star_count"
+                          android:layout_width="110dp"
+                          android:layout_height="110dp"
+                          android:layout_alignBottom="@+id/img_studProfPick1"
+                          android:layout_marginTop="10dp"
+                          android:gravity="left"
+                          android:paddingRight="20dp"
+                          android:src="@drawable/devanand"
+                          android:visibility="visible" />
+                      <TextView
+                          android:id="@+id/txt_noOfProjects"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:visibility="gone"
+                          android:gravity="bottom"
+                          android:layout_marginTop="15dp"
+                          android:layout_marginLeft="15dp"
+                          android:textColor="#000"
+                          android:text="1"
+                          android:textSize="11sp"
+                          android:textStyle="bold" />
+
+                  </RelativeLayout>-->
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/relay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/img_studProfPick1"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="30dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/devanand"
+                        />
+
+                    <ImageView
+                        android:id="@+id/star_count"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="75dp"
+                        android:layout_marginLeft="105dp"
+                        android:layout_gravity="top|right"
+                        android:visibility="gone"
+                        android:src="@drawable/star_nn"/>
+
+                    <TextView
+                        android:id="@+id/txt_noOfProjects"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:gravity="bottom"
+                        android:layout_marginTop="80dp"
+                        android:layout_marginLeft="125dp"
+                        android:textColor="#fcae05"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:shadowColor="#ff9e9e9e"
+                        android:shadowDx="-2"
+                        android:shadowDy="-2"
+                        android:shadowRadius="1"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:textStyle="normal"
+                        android:text=""
+                        android:id="@+id/txt_studName"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:textStyle="normal"
+                        android:text=""
+                        android:id="@+id/txt_studCollegeName"
+                        android:singleLine="false"
+                        android:maxLines="4"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:visibility="gone"
+                        android:id="@+id/txt_studType"
+                        android:text="text"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:id="@+id/txt_leadId"
+                        android:text=""
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/bages"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="3dp"
+                android:weightSum="5"
+                >
+                <!--  <io.supercharge.shimmerlayout.ShimmerLayout
+                      android:id="@+id/shimmer_text"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      app:shimmer_color="#fff"
+                      app:shimmer_animation_duration="1200">-->
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/shimmer_view1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    app:shimmer_highlight_alpha="0"
+                    app:shimmer_base_alpha="5"
+                    android:layout_weight="1"
+                    app:shimmer_duration="2000">
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/badge1"
+                            android:visibility="gone"
+                            android:src="@drawable/lead_prayana"/>
+                        <TextView
+                            android:id="@+id/badge1text"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="33dp"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_below="@+id/badge1"
+                            android:textColor="#00008B"
+                            android:text="3"/>
+                    </RelativeLayout>
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
+                <!--  </io.supercharge.shimmerlayout.ShimmerLayout>-->
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/shimmer_view2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    app:shimmer_highlight_alpha="0"
+                    app:shimmer_base_alpha="5"
+                    android:layout_weight="1"
+                    app:shimmer_duration="2000">
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/badge2"
+                            android:visibility="gone"
+                            android:src="@drawable/ys_new"/>
+                        <TextView
+                            android:id="@+id/badge2text"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="32dp"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_below="@+id/badge2"
+                            android:textColor="#00008B"
+                            android:text="3"/>
+                    </RelativeLayout>
+                </com.facebook.shimmer.ShimmerFrameLayout>
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/shimmer_view3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    app:shimmer_highlight_alpha="0"
+                    app:shimmer_base_alpha="5"
+                    android:layout_weight="1"
+                    app:shimmer_duration="2000">
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/badge3"
+                            android:visibility="gone"
+                            android:layout_gravity="center"
+                            android:src="@drawable/valedictory_new"/>
+                        <TextView
+                            android:id="@+id/badge3text"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="32dp"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_below="@+id/badge3"
+                            android:textColor="#00008B"
+                            android:text="3"/>
+                    </RelativeLayout>
+                </com.facebook.shimmer.ShimmerFrameLayout>
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/shimmer_view4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    app:shimmer_highlight_alpha="0"
+                    app:shimmer_base_alpha="5"
+                    android:layout_weight="1"
+                    app:shimmer_duration="2000">
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:id="@+id/badge4"
+                            android:src="@drawable/lead_leader"/>
+                        <TextView
+                            android:id="@+id/badge4text"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="32dp"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_below="@+id/badge4"
+                            android:textColor="#00008B"
+                            android:text="3"/>
+                    </RelativeLayout>
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_weight="1"
+                    android:id="@+id/btn_tshirt_apply"
+                    android:src="@drawable/tshirt_d"/>
+                <!--<Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:visibility="gone"
+                    android:id="@+id/btn_tshirt_apply"
+                    android:layout_marginLeft="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/tshirt1kb"
+                    />
+-->
+
+            </LinearLayout>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:id="@+id/fram_layout"
+                android:paddingLeft="40dp"
+                android:clipToPadding="false"
+                android:focusable="true">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:scaleType="fitXY"
+                        android:visibility="gone"
+                        android:id="@+id/img_studProfPick"
+                        android:layout_gravity="center"
+                        android:src="@drawable/devanand"/>
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:focusable="true">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:id="@+id/img_crownMan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:layout_marginLeft="50dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/crown_man_1"
+                            android:gravity="center" />
+
+
+                        <ImageView
+                            android:id="@+id/img_crownWoman"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:layout_marginLeft="50dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/crown_women_1"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/txt_noOfProjects1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:gravity="bottom"
+                            android:layout_marginLeft="120dp"
+                            android:background="@drawable/badge_background1"
+                            android:textColor="#000"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                        <!--  <ImageView
+                              android:id="@+id/img_crownWoman"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:paddingLeft="10dp"
+                              android:layout_gravity="center_horizontal"
+                              android:background="@drawable/crown_women"
+                              android:gravity="center" />-->
+                    </RelativeLayout>
+
+                    <!--        <ImageView
+                                android:id="@+id/img_crownWoman"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:paddingLeft="10dp"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/crown_man"
+                                android:gravity="center" />-->
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+
+
+            <!--   <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/badges_004"
+                   />-->
+            <LinearLayout
+                android:weightSum="6"
+                android:id="@+id/stud_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <pl.bclogic.pulsator4droid.library.PulsatorLayout
+                        android:id="@+id/pulsator1"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        app:pulse_color="#8A2BE2"
+                        app:pulse_count="3"
+                        app:pulse_duration="5000"
+                        app:pulse_interpolator="Decelerate"
+                        app:pulse_repeat="0"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        app:pulse_startFromScratch="false">
+
+                        <ImageView
+                            android:id="@+id/student"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/studentjourneypplus"
+                            app:tint="@color/light_gray" />
+                        <View
+                            android:id="@+id/stud_right"
+                            android:layout_width="10dp"
+                            android:layout_height="2dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:background="@color/light_gray"
+                            android:layout_centerVertical="true"
+                            />
+                    </pl.bclogic.pulsator4droid.library.PulsatorLayout>
+
+                    <TextView
+                        android:id="@+id/stud_tv"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/colorPerpule"
+                        android:textSize="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Student"/>
+
+                </LinearLayout>
+           <!--     <View
+                    android:layout_width="20dp"
+                    android:layout_height="6dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/dotted_line"
+                    android:layout_marginBottom="6dp"
+                    />-->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <pl.bclogic.pulsator4droid.library.PulsatorLayout
+                        android:id="@+id/pulsator2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        app:pulse_color="#8A2BE2"
+                        app:pulse_count="3"
+                        app:pulse_duration="5000"
+                        app:pulse_interpolator="Decelerate"
+                        app:pulse_repeat="0"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        app:pulse_startFromScratch="false">
+
+                        <ImageView
+                            android:id="@+id/initiater"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/studentjourneypplus"
+                            app:tint="@color/light_gray" />
+
+                        <View
+                            android:id="@+id/initiater_left"
+                            android:layout_width="10dp"
+                            android:layout_height="2dp"
+                            android:background="@color/light_gray"
+                            android:layout_centerVertical="true"
+                            />
+                        <View
+                            android:id="@+id/initiater_right"
+                            android:layout_width="10dp"
+                            android:layout_height="2dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:background="@color/light_gray"
+                            android:layout_centerVertical="true"
+                            />
+                    </pl.bclogic.pulsator4droid.library.PulsatorLayout>
+                    <TextView
+                        android:id="@+id/initiater_tv"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="#000"
+                        android:textSize="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Initiator"/>
+                </LinearLayout>
+               <!-- <View
+                    android:layout_width="15dp"
+                    android:layout_height="2dp"
+                    android:background="@color/light_gray"
+                    android:layout_gravity="center"
+                    />-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <pl.bclogic.pulsator4droid.library.PulsatorLayout
+                        android:id="@+id/pulsator3"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        app:pulse_color="#8A2BE2"
+                        app:pulse_count="3"
+                        app:pulse_duration="5000"
+                        app:pulse_interpolator="Decelerate"
+                        app:pulse_repeat="0"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        app:pulse_startFromScratch="false">
+                        <ImageView
+                            android:id="@+id/changemaker"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/studentjourneypplus"
+                            app:tint="@color/light_gray" />
+                        <View
+                            android:id="@+id/cm_left"
+                            android:layout_width="10dp"
+                            android:layout_height="2dp"
+                            android:background="@color/light_gray"
+                            android:layout_centerVertical="true"
+                            />
+                        <View
+                            android:id="@+id/cm_right"
+                            android:layout_width="10dp"
+                            android:layout_height="2dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:background="@color/light_gray"
+                            android:layout_centerVertical="true"
+                            />
+                    </pl.bclogic.pulsator4droid.library.PulsatorLayout>
+
+                    <TextView
+                        android:id="@+id/cm_tv"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:textColor="#000"
+                        android:textSize="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Change Maker"/>
+                </LinearLayout>
+              <!--  <View
+                    android:layout_width="15dp"
+                    android:layout_height="2dp"
+                    android:background="@color/light_gray"
+                    android:layout_gravity="center"
+                    />-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <pl.bclogic.pulsator4droid.library.PulsatorLayout
+                        android:id="@+id/pulsator4"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        app:pulse_color="#8A2BE2"
+                        app:pulse_count="3"
+                        app:pulse_duration="5000"
+                        app:pulse_interpolator="Decelerate"
+                        app:pulse_repeat="0"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        app:pulse_startFromScratch="false">
+                        <ImageView
+                            android:id="@+id/leader"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/studentjourneypplus"
+                            app:tint="@color/light_gray" />
+                        <View
+                            android:id="@+id/leader_left"
+                            android:layout_width="10dp"
+                            android:layout_height="2dp"
+                            android:background="@color/light_gray"
+                            android:layout_centerVertical="true"
+                            />
+                        <View
+                            android:id="@+id/leader_right"
+                            android:layout_width="10dp"
+                            android:layout_height="2dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:background="@color/light_gray"
+                            android:layout_centerVertical="true"
+                            />
+                    </pl.bclogic.pulsator4droid.library.PulsatorLayout>
+                    <TextView
+                        android:id="@+id/leader_tv"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:textColor="#000"
+                        android:textSize="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Leader"/>
+                </LinearLayout>
+                <!--<View
+                    android:layout_width="20dp"
+                    android:layout_height="2dp"
+                    android:background="@color/light_gray"
+                    android:layout_gravity="center"
+                    />-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <pl.bclogic.pulsator4droid.library.PulsatorLayout
+                        android:id="@+id/pulsator5"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        app:pulse_color="#8A2BE2"
+                        app:pulse_count="3"
+                        app:pulse_duration="5000"
+                        app:pulse_interpolator="Decelerate"
+                        app:pulse_repeat="0"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        app:pulse_startFromScratch="false">
+                        <ImageView
+                            android:id="@+id/master"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/studentjourneypplus"
+                            app:tint="@color/light_gray" />
+                        <View
+                            android:id="@+id/ml_left"
+                            android:layout_width="10dp"
+                            android:layout_height="2dp"
+                            android:background="@color/light_gray"
+                            android:layout_centerVertical="true"
+                            />
+                        <View
+                            android:id="@+id/ml_right"
+                            android:layout_width="10dp"
+                            android:layout_height="2dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:background="@color/light_gray"
+                            android:layout_centerVertical="true"
+                            />
+                    </pl.bclogic.pulsator4droid.library.PulsatorLayout>
+                    <TextView
+                        android:id="@+id/ml_tv"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:textColor="#000"
+                        android:textSize="8dp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Master Leader"/>
+                </LinearLayout>
+            <!--    <View
+                    android:layout_width="20dp"
+                    android:layout_height="2dp"
+                    android:background="@color/light_gray"
+                    android:layout_gravity="center"
+                    />-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <pl.bclogic.pulsator4droid.library.PulsatorLayout
+                        android:id="@+id/pulsator6"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        app:pulse_color="#8A2BE2"
+                        app:pulse_count="3"
+                        app:pulse_duration="5000"
+                        app:pulse_interpolator="Decelerate"
+                        app:pulse_repeat="0"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        app:pulse_startFromScratch="false">
+                        <ImageView
+                            android:id="@+id/ambasiter"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/studentjourneypplus"
+                            app:tint="@color/light_gray" />
+                        <View
+                            android:id="@+id/amb_left"
+                            android:layout_width="10dp"
+                            android:layout_height="2dp"
+                            android:background="@color/light_gray"
+                            android:layout_centerVertical="true"
+                            />
+                    </pl.bclogic.pulsator4droid.library.PulsatorLayout>
+                    <TextView
+                        android:id="@+id/amb_tv"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:textColor="#000"
+                        android:textSize="8dp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ambassador"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/student"/>-->
+                <com.kofigyan.stateprogressbar.StateProgressBar
+                    android:id="@+id/usage_stateprogressbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="gone"
+                    app:spb_animateToCurrentProgressState="true"
+                    app:spb_stateDescriptionSize="10sp"
+                    app:spb_stateTextSize="8sp"
+                    app:spb_stateSize="15dp"
+                    app:spb_stateLineThickness="4dp"
+                    app:spb_checkStateCompleted="true"
+                    app:spb_currentStateDescriptionColor="@color/colorPrimary"
+                    app:spb_descriptionTopSpaceIncrementer="3dp"
+                    app:spb_maxStateNumber="five"
+                    app:spb_stateBackgroundColor="@color/state_background_color"
+                    app:spb_stateDescriptionColor="@color/state_background_text_color"
+                    app:spb_stateForegroundColor="@color/colorPrimary"
+                    app:spb_stateNumberBackgroundColor="@color/state_background_text_color"
+                    app:spb_stateNumberForegroundColor="@color/state_foreground_text_color">
+
+                </com.kofigyan.stateprogressbar.StateProgressBar>
+
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:verticalSpacing="0dp"
+                android:horizontalSpacing="0dp"
+                android:layout_marginTop="5dp"
+                android:stretchMode="columnWidth"
+                android:numColumns="3"/>
+            <GridView
+                android:id="@+id/gridview1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:verticalSpacing="0dp"
+                android:horizontalSpacing="0dp"
+                android:stretchMode="columnWidth"
+                android:numColumns="3"/>
+            <!-- <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="fill_parent"
+                 android:paddingTop="10dp"
+                 android:orientation="vertical">
+
+                 <LinearLayout
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentBottom="true">
+                     <LinearLayout
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:id="@+id/lnrlyt_aboutUs"
+                         android:padding="5dp"
+                         android:layout_weight="1"
+                         android:orientation="vertical">
+
+                         <ImageView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center"
+                             android:scaleType="fitCenter"
+                             android:scaleX="1"
+                             android:scaleY="1"
+                             android:id="@+id/about_IV"
+                             android:src="@drawable/about"
+                             />
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:padding="3dp"
+                             android:textSize="14sp"
+                             android:layout_gravity="center"
+                             android:textColor="#ffffff"
+                             android:id="@+id/about_TV"
+                             android:text="About LEAD"
+                             />
+                     </LinearLayout>
+
+                     <LinearLayout
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:id="@+id/lnrlyt_projectDtls"
+                         android:padding="5dp"
+                         android:layout_weight="1"
+                         android:orientation="vertical">
+
+                         <ImageView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center"
+                             android:scaleType="fitCenter"
+                             android:scaleX="1"
+                             android:scaleY="1"
+                             android:id="@+id/projectDetails_IV"
+                             android:src="@drawable/project"
+                             />
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:padding="3dp"
+                             android:textSize="14sp"
+                             android:textColor="#ffffff"
+                             android:id="@+id/projectDetails_TV"
+                             android:layout_gravity="center"
+                             android:text="Project Details"
+                             />
+                     </LinearLayout>
+
+
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:id="@+id/ll2"
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="horizontal"
+                     android:layout_alignParentBottom="true">
+
+                     <LinearLayout
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:id="@+id/lnrlyt_events"
+                         android:padding="5dp"
+                         android:layout_weight="1"
+                         android:orientation="vertical">
+
+                         <ImageView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center"
+                             android:scaleType="fitCenter"
+                             android:scaleX="1"
+                             android:scaleY="1"
+                             android:id="@+id/events_IV"
+                             android:src="@drawable/event" />
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:padding="3dp"
+                             android:id="@+id/events_TV"
+                             android:textSize="14sp"
+                             android:layout_gravity="center"
+                             android:textColor="#ffffff"
+                             android:text="Events"
+                             />
+                     </LinearLayout>
+
+                     <LinearLayout
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:id="@+id/lnrlyt_newsfeeds"
+                         android:padding="5dp"
+                         android:layout_weight="1"
+                         android:orientation="vertical">
+
+                         <ImageView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center"
+                             android:scaleType="fitCenter"
+                             android:scaleX="1"
+                             android:scaleY="1"
+                             android:id="@+id/news_IV"
+                             android:src="@drawable/news"
+                             />
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:padding="3dp"
+                             android:textSize="14sp"
+                             android:textColor="#ffffff"
+                             android:id="@+id/news_TV"
+                             android:layout_gravity="center"
+                             android:text="News Feeds" />
+                     </LinearLayout>
+
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:id="@+id/ll3"
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="horizontal"
+                     android:layout_alignParentBottom="true">
+
+                     <LinearLayout
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:padding="5dp"
+                         android:layout_weight="1"
+                         android:orientation="vertical">
+
+                         <ImageView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center"
+                             android:scaleType="fitCenter"
+                             android:scaleX="1"
+                             android:scaleY="1"
+                             android:id="@+id/contactus_IV"
+                             android:src="@drawable/contact" />
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:padding="3dp"
+                             android:textSize="14sp"
+                             android:id="@+id/contactus_TV"
+                             android:layout_gravity="center"
+                             android:textColor="#ffffff"
+                             android:text="Contact US"
+                             />
+                     </LinearLayout>
+
+
+                 </LinearLayout>
+
+
+             </LinearLayout>-->
+        </LinearLayout>
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+
+    </LinearLayout>
+
+
+
+
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:orientation="vertical">
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:gravity="center_horizontal"
+         android:visibility="visible"
+         android:id="@+id/lnrlyt_viewProfile"
+         android:orientation="vertical">
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center_horizontal"
+          android:orientation="vertical">
+
+       <ImageView
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:scaleType="fitXY"
+           android:src="@drawable/nature"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="#ffffff"
+           android:textSize="14sp"
+           android:textStyle="normal"
+           android:text="Satish N"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="#ffffff"
+           android:textSize="14sp"
+           android:text="J G College Of Commerce"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="#ffffff"
+           android:textSize="14sp"
+           android:text="Student"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="#ffffff"
+           android:textSize="14sp"
+           android:text="ME01171"/>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:src="@drawable/student"/>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="fill_parent"
+          android:orientation="vertical"
+          android:weightSum="1.7">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1.5"
+           android:visibility="visible"
+           android:orientation="vertical"
+           android:gravity="center"
+           android:layout_below="@+id/lnrlyt_socialicon">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:id="@+id/ln1"
+             android:gravity="center"
+             android:orientation="horizontal">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:orientation="vertical">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/about"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textAlignment="center"
+               android:textColor="#ffffff"
+               android:textSize="16sp"
+               android:text="About LEAD"/>
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/lnrlyt_projectDtls"
+              android:gravity="center"
+              android:layout_weight="1"
+              android:orientation="vertical">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/project"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textAlignment="center"
+               android:textColor="#ffffff"
+               android:textSize="16sp"
+               android:text="Project Details"/>
+
+
+          </LinearLayout>
+
+
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:layout_below="@+id/ln1"
+             android:gravity="center"
+             android:orientation="horizontal">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:id="@+id/lnrlyt_events"
+              android:gravity="center"
+              android:orientation="vertical">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/event"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textAlignment="center"
+               android:textColor="#ffffff"
+               android:textSize="16sp"
+               android:text="Events"/>
+
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:id="@+id/lnrlyt_newsfeeds"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:orientation="vertical">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/news" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="News Feeds"
+               android:textAlignment="center"
+               android:textColor="#ffffff"
+               android:textSize="16sp" />
+
+
+          </LinearLayout>
+
+
+         </LinearLayout>
+        </LinearLayout>
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:visibility="visible"
+           android:gravity="center"
+           android:layout_weight="0.2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/contact"/>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textAlignment="center"
+             android:textColor="#ffffff"
+             android:textSize="16sp"
+             android:text="Contact US"/>
+
+        </LinearLayout>
+
+
+       </LinearLayout>
+      </LinearLayout>
+     </LinearLayout>
+
+
+    </LinearLayout>
+   -->
+
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:orientation="vertical">
+
+
+
+     <LinearLayout
+         android:id="@+id/ll1"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:layout_marginTop="60dp"
+         android:layout_marginBottom="20dp"
+         android:gravity="center">
+
+      <ImageView
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:src="@drawable/devanand"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="#ffffff"
+          android:textSize="14sp"
+          android:text="Satish N"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="#ffffff"
+          android:textSize="14sp"
+          android:text="J G College Of Commerce"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="#ffffff"
+          android:textSize="14sp"
+          android:text="Student"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="#ffffff"
+          android:textSize="14sp"
+          android:text="ME01171"/>
+     </LinearLayout>
+
+
+     <View
+         android:layout_width="match_parent"
+         android:layout_height="2dp"
+         android:background="#FFC300"
+         android:layout_marginBottom="10dp"
+         />
+
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/ll1"
+         android:layout_alignParentBottom="true">
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:padding="5dp"
+          android:layout_weight="1"
+          android:background="?android:selectableItemBackground"
+          android:orientation="vertical">
+
+       <ImageView
+           android:id="@+id/announcement_IV"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:scaleType="fitCenter"
+           android:scaleX="1"
+           android:scaleY="1"
+           android:src="@drawable/about"
+           />
+       <TextView
+           android:id="@+id/total_ET"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:padding="3dp"
+           android:textSize="14sp"
+           android:layout_gravity="center"
+           android:textColor="#ffffff"
+           android:text="About LEAD"
+           android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:padding="5dp"
+          android:layout_weight="1"
+          android:background="?android:selectableItemBackground"
+          android:orientation="vertical">
+
+       <ImageView
+           android:id="@+id/holiday_IV"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:scaleType="fitCenter"
+           android:scaleX="1"
+           android:scaleY="1"
+           android:src="@drawable/project"
+           />
+       <TextView
+           android:id="@+id/Notup_TV"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:padding="3dp"
+           android:textSize="14sp"
+           android:textColor="#ffffff"
+           android:layout_gravity="center"
+           android:text="Project Details"
+           android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+      </LinearLayout>
+
+
+     </LinearLayout>
+
+     <LinearLayout
+         android:id="@+id/ll2"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:layout_alignParentBottom="true">
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:padding="5dp"
+          android:layout_weight="1"
+          android:background="?android:selectableItemBackground"
+          android:orientation="vertical">
+
+       <ImageView
+           android:id="@+id/OD_IV"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:scaleType="fitCenter"
+           android:scaleX="1"
+           android:scaleY="1"
+           android:src="@drawable/event" />
+       <TextView
+           android:id="@+id/feessubmit_TV"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:padding="3dp"
+           android:textSize="14sp"
+           android:layout_gravity="center"
+           android:textColor="#ffffff"
+           android:text="Events"
+           android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:padding="5dp"
+          android:layout_weight="1"
+          android:background="?android:selectableItemBackground"
+          android:orientation="vertical">
+
+       <ImageView
+           android:id="@+id/functionhead_IV"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:scaleType="fitCenter"
+           android:scaleX="1"
+           android:scaleY="1"
+           android:src="@drawable/news"
+           />
+       <TextView
+           android:id="@+id/collegehistory_TV"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:padding="3dp"
+           android:textSize="14sp"
+           android:textColor="#ffffff"
+           android:layout_gravity="center"
+           android:text="News Feeds"
+           android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+      </LinearLayout>
+
+     </LinearLayout>
+
+     <LinearLayout
+         android:id="@+id/ll3"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:layout_alignParentBottom="true">
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:padding="5dp"
+          android:layout_weight="1"
+          android:background="?android:selectableItemBackground"
+          android:orientation="vertical">
+
+       <ImageView
+           android:id="@+id/fheadreview_IV"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:scaleType="fitCenter"
+           android:scaleX="1"
+           android:scaleY="1"
+           android:src="@drawable/contact" />
+       <TextView
+           android:id="@+id/fheadreview_TV"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:padding="3dp"
+           android:textSize="14sp"
+           android:layout_gravity="center"
+           android:textColor="#ffffff"
+           android:text="Contact US"
+           android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+      </LinearLayout>
+
+
+     </LinearLayout>
+    </LinearLayout>-->
+
+
+
+</ScrollView>

@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.leadcampusapp.PMHomeActivity">
+
+    <!--  <android.support.design.widget.TabLayout
+          android:id="@+id/tab_layoutPM"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:elevation="6dp"
+          android:minHeight="?attr/actionBarSize"
+          />-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/LinearLayout02"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:focusableInTouchMode="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="8dp">
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_profilepic"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/devanand"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:id="@+id/txt_Name"
+                    android:text="Satish N"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:id="@+id/txt_mailid"
+                    android:text="J G College Of Commerce"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:id="@+id/txt_mobile"
+                    android:text="Student"/>
+                <!-- <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textColor="#ffffff"
+                     android:textSize="14sp"
+                     android:id="@+id/txt_location"
+                     android:text="ME01171"/>-->
+            </LinearLayout>
+
+            <!--  <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:layout_marginBottom="5dp"
+                  android:orientation="horizontal">
+                  <ImageView
+                      android:layout_width="30dp"
+                      android:layout_height="30dp"
+                      android:paddingRight="15dp"
+                      android:layout_marginRight="20dp"
+                      android:src="@drawable/fb"/>
+                  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:paddingRight="15dp"
+                      android:layout_marginRight="20dp"
+                      android:src="@drawable/tw"/>
+                  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:paddingRight="15dp"
+                      android:src="@drawable/inst"/>
+              </LinearLayout>-->
+            <!--  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                 android:id="@+id/header"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentTop="true"
+                 android:layout_marginBottom="30dp">
+
+                <com.kofigyan.stateprogressbar.StateProgressBar
+                     android:id="@+id/usage_stateprogressbar"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     app:spb_animateToCurrentProgressState="true"
+                     app:spb_stateDescriptionSize="10sp"
+                     app:spb_stateTextSize="8sp"
+                     app:spb_stateSize="3dp"
+                     app:spb_stateLineThickness="2dp"
+                     app:spb_checkStateCompleted="true"
+                     app:spb_currentStateDescriptionColor="@color/usage_state_foreground_color"
+                     app:spb_descriptionTopSpaceIncrementer="3dp"
+                     app:spb_maxStateNumber="four"
+                     app:spb_stateBackgroundColor="@color/state_background_color"
+                     app:spb_stateDescriptionColor="@color/state_background_text_color"
+                     app:spb_stateForegroundColor="@color/usage_state_foreground_color"
+                     app:spb_stateNumberBackgroundColor="@color/state_background_text_color"
+                     app:spb_stateNumberForegroundColor="@color/state_foreground_text_color"></com.kofigyan.stateprogressbar.StateProgressBar>
+             </LinearLayout>-->
+            <!-- <LinearLayout
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:layout_marginBottom="10dp"
+                 android:layout_marginTop="5dp"
+                 android:orientation="horizontal">
+
+                         <ImageView
+                             android:layout_width="35dp"
+                             android:layout_height="35dp"
+                             android:layout_marginTop="5dp"
+                             android:layout_marginBottom="5dp"
+                             android:layout_gravity="center"
+                             android:src="@drawable/fb"/>
+
+                 <ImageView
+                     android:layout_width="35dp"
+                     android:layout_height="35dp"
+                     android:layout_gravity="center"
+                     android:layout_marginLeft="30dp"
+                     android:layout_marginTop="5dp"
+                     android:layout_marginBottom="5dp"
+                     android:src="@drawable/tw" />
+
+                         <ImageView
+                             android:layout_width="35dp"
+                             android:layout_height="35dp"
+                             android:layout_marginLeft="30dp"
+                             android:layout_marginTop="5dp"
+                             android:layout_gravity="center"
+                             android:layout_marginBottom="5dp"
+                             android:src="@drawable/inst"/>
+             </LinearLayout>-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:background="#FFC300"
+                android:layout_marginBottom="6dp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:clipToPadding="false"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pending_count"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:paddingRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/pending_home"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="@color/colorBlack"
+                            android:text="Pending"/>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/cart_badge1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="end|left"
+                        android:layout_marginLeft="25dp"
+                        android:background="@drawable/badge_background"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:textSize="11sp" />
+
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:clipToPadding="false"
+                    android:focusable="true">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:paddingRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/approve_home"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="@color/colorBlack"
+                            android:text="Approved"/>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/cart_badge2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/badge_background"
+                        android:gravity="end|left"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:textSize="11sp" />
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:focusable="true">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:paddingRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/completed_home"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="@color/colorBlack"
+                            android:text="Completed"/>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/cart_badge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="end|left"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/badge_background"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:textSize="11sp" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll1"
+                android:layout_marginTop="15dp"
+                android:layout_alignParentBottom="true">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:background="?android:selectableItemBackground"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/about_IV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:scaleType="fitCenter"
+                        android:scaleX="1"
+                        android:scaleY="1"
+                        android:src="@drawable/about"
+                        />
+                    <TextView
+                        android:id="@+id/about_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:text="About LEAD"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="8dp"
+                    android:background="?android:selectableItemBackground"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/projectDetails_IV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:scaleType="fitCenter"
+                        android:scaleX="1"
+                        android:scaleY="1"
+                        android:src="@drawable/project"
+                        />
+                    <TextView
+                        android:id="@+id/projectDetails_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_gravity="center"
+                        android:text="Project Details"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:background="?android:selectableItemBackground"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/events_IV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:scaleType="fitCenter"
+                        android:scaleX="1"
+                        android:scaleY="1"
+                        android:src="@drawable/event" />
+                    <TextView
+                        android:id="@+id/events_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:text="Events"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:background="?android:selectableItemBackground"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/news_IV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="37dp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitCenter"
+                        android:scaleX="1"
+                        android:scaleY="1"
+                        android:src="@drawable/news"
+                        />
+                    <TextView
+                        android:id="@+id/news_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_gravity="center"
+                        android:text="News Feeds"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true">
+                <!--    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:background="?android:selectableItemBackground"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/contactus_IV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:scaleType="fitCenter"
+                            android:scaleX="1"
+                            android:scaleY="1"
+                            android:src="@drawable/contact" />
+                        <TextView
+                            android:id="@+id/contactus_TV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:textSize="14sp"
+                            android:layout_gravity="center"
+                            android:textColor="#ffffff"
+                            android:text="Contact US"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                    </LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:background="?android:selectableItemBackground"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/chart_IV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="41dp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitCenter"
+                        android:scaleX="1"
+                        android:scaleY="1"
+                        android:src="@drawable/analytical"
+                        />
+                    <TextView
+                        android:id="@+id/chart_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:text="Analytic Chart"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="?android:selectableItemBackground"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/request_IV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="41dp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitCenter"
+                        android:scaleX="1"
+                        android:scaleY="1"
+                        android:src="@drawable/masters"
+                        />
+                    <TextView
+                        android:id="@+id/request_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_gravity="center"
+                        android:text="Masters/Ambassadors"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true">
+                <!--    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:background="?android:selectableItemBackground"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/contactus_IV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:scaleType="fitCenter"
+                            android:scaleX="1"
+                            android:scaleY="1"
+                            android:src="@drawable/contact" />
+                        <TextView
+                            android:id="@+id/contactus_TV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:textSize="14sp"
+                            android:layout_gravity="center"
+                            android:textColor="#ffffff"
+                            android:text="Contact US"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                    </LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:background="?android:selectableItemBackground"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/feesPaid_IV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="41dp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitCenter"
+                        android:scaleX="1"
+                        android:scaleY="1"
+                        android:src="@drawable/analytical"
+                        />
+                    <TextView
+                        android:id="@+id/feesPaid_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:text="Fees Paid"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                </LinearLayout>
+
+                <!--<LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="?android:selectableItemBackground"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/request_IV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="41dp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitCenter"
+                        android:scaleX="1"
+                        android:scaleY="1"
+                        android:src="@drawable/masters"
+                        />
+                    <TextView
+                        android:id="@+id/request_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textSize="14sp"
+                        android:textColor="#ffffff"
+                        android:layout_gravity="center"
+                        android:text="Masters/Ambassadors"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                </LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:background="?android:selectableItemBackground"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/contactus_IV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:scaleType="fitCenter"
+                        android:scaleX="1"
+                        android:scaleY="1"
+                        android:src="@drawable/contact" />
+                    <TextView
+                        android:id="@+id/contactus_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:text="Contact US"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+
+            <!--     <LinearLayout
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="horizontal"
+                     android:layout_marginBottom="15dp"
+                     >
+
+                     <LinearLayout
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:padding="5dp"
+                         android:layout_marginLeft="15dp"
+                         android:layout_weight="1"
+                         android:background="?android:selectableItemBackground"
+                         android:orientation="vertical">
+
+                         <ImageView
+                             android:id="@+id/contactus_IV"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center"
+                             android:scaleType="fitCenter"
+                             android:scaleX="1"
+                             android:scaleY="1"
+                             android:src="@drawable/contact" />
+                         <TextView
+                             android:id="@+id/contactus_TV"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:padding="3dp"
+                             android:textSize="14sp"
+                             android:layout_gravity="center"
+                             android:textColor="#ffffff"
+                             android:text="Contact US"
+                             android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                     </LinearLayout>
+
+                 </LinearLayout>-->
+
+
+            <!--<LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:background="?android:selectableItemBackground"
+                    android:orientation="vertical">
+                    <Button
+                        android:id="@+id/themeWiseProjCount_BT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:textColor="#ffffff"
+                        android:text="Themewise Project count"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                </LinearLayout>
+
+            </LinearLayout>-->
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+</RelativeLayout>

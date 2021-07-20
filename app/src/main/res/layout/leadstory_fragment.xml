@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_feed_polls"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+ <com.leadcampusapp.VerticalViewPager
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:id="@+id/vPager">
+
+
+ <!--<Button
+     android:id="@+id/btn_top"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Top"
+     android:background="#CFCFCF"
+     android:textColor="@color/colorWhite"/>
+     android:layout_alignParentBottom="true"-->
+ <ImageView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentBottom="true"
+     android:layout_alignParentRight="true"
+     android:layout_marginRight="20dp"
+     android:layout_marginBottom="5dp"
+     android:id="@+id/iv_top"
+     android:src="@drawable/sharp_vertical_align_top_white_24"
+     />
+ </com.leadcampusapp.VerticalViewPager>
+ <ProgressBar
+     android:visibility="gone"
+     android:id="@+id/progressBar"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerHorizontal="true"
+     android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="380dp"
+    android:background="#1E1669"
+    android:padding="5dp"
+    android:layout_gravity="center">
+    <TextView
+        android:id="@+id/txtclose"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textColor="@color/colorWhite"
+        android:text="Reapply T-Shirt "
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        />
+
+
+    <TextView
+        android:id="@+id/previous_request_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textColor="@color/colorWhite"
+        android:text=""
+        android:textStyle="italic"
+        android:layout_gravity="left"
+        android:visibility="gone"
+        android:gravity="left"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:text="Size"
+            android:layout_marginLeft="25dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:text="Chest"
+            android:layout_marginLeft="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:text="Height"
+            android:layout_marginLeft="20dp"
+            />
+
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/tshirt_reapply_radiogroup_RG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp">
+
+        <RadioButton
+            android:id="@+id/small_RB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S           36'           26'"
+            android:textColor="@color/colorWhite"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/medium_RB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M          38'           27'"
+            android:textColor="@color/colorWhite" />
+
+        <RadioButton
+            android:id="@+id/large_RB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="L           40'           28'"
+            android:textColor="@color/colorWhite" />
+        <RadioButton
+            android:id="@+id/extralarge_RB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XL         42'           29'"
+            android:textColor="@color/colorWhite" />
+        <RadioButton
+            android:id="@+id/doublelarge_RB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XXL       44'           30'"
+            android:textColor="@color/colorWhite" />
+    </RadioGroup>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Reason for Reapply"
+            android:textColor="@color/colorWhite"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tshirtreapply_error_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#cccccc" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spin_tshirtreapply_reason"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:popupBackground="#1E1669"
+                android:textColorHint="@color/colorWhite"></androidx.appcompat.widget.AppCompatSpinner>
+        </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="left"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+       <!-- <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src=""/>-->
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tshirt_reapply_BT"
+            android:text="Apply"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/button_rectangle_white"
+            android:layout_marginLeft="5dp"
+
+            />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:id="@+id/tshirt_reapply_cancel_BT"
+            android:textColor="@color/colorPinkdark"
+            android:background="@drawable/button_rectangle_white"
+            android:layout_marginLeft="45dp"
+            />
+
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:paddingLeft="15dp"
+            android:text="Project Rejected"
+            android:textSize="15sp"
+            android:textColor="@color/colorWhite"/>-->
+    </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

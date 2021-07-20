@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="visible"
+    android:id="@+id/lnrlyt_editProfile"
+    android:padding="10dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingTop="20dp">
+
+                <ImageView
+                    android:id="@+id/img_profilePick"
+                    android:layout_width="130dp"
+                    android:layout_height="145dp"
+                    android:scaleType="fitXY"
+                    android:scaleX="1"
+                    android:scaleY="1"
+                    android:src="@drawable/devanand" />
+
+                <ImageButton
+                    android:id="@+id/imgBtn_addProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/img_profilePick"
+                    android:layout_alignEnd="@+id/img_profilePick"
+                    android:layout_alignRight="@+id/img_profilePick"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_camera_alt_black_36dp" />
+            </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_mentorName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/textColorHint">
+
+                <EditText
+                    android:id="@+id/edt_mentorName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_bottom_line"
+                    android:hint="Manager Name"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/textColorHint"
+                    android:textSize="15sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_emailid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/textColorHint">
+
+                <EditText
+                    android:id="@+id/edt_emailid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_bottom_line"
+                    android:hint="Email ID"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/textColorHint"
+                    android:textSize="15sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Blood Group"
+                    android:textColor="@color/colorBlack" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spin_bg"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorBlack"
+                    android:textColor="@color/colorBlack"
+                    ></androidx.appcompat.widget.AppCompatSpinner>
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:id="@+id/gender_radiogroup"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rdb_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#ffffff"
+                        android:checked="true"
+                        android:onClick="onRadioButtonGenderClicked"
+                        android:textSize="10dp" />
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/boy" />
+
+                    <RadioButton
+                        android:id="@+id/rdb_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:onClick="onRadioButtonGenderClicked" />
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/girl" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorBlack"
+                android:hint="Mobile No."
+                android:textColorHint="@color/textColorHint">
+
+                <EditText
+                    android:id="@+id/mobile_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_bottom_line"
+                    android:hint="Mobile No."
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/textColorHint"
+                    android:textSize="15sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <!--<com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="#ffffff"
+                android:textColorHint="@color/textColorHint">
+
+               &lt;!&ndash; <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/whatsupnew"/>&ndash;&gt;
+                <EditText
+                    android:id="@+id/whatsapp_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_bottom_line"
+                    android:drawableLeft="@drawable/whatsupnew"
+                    android:drawableStart="@drawable/whatsupnew"
+                    android:drawablePadding="5dp"
+                    android:hint="Whatsapp No."
+                    android:textColor="#ffffff"
+                    android:textColorHint="@color/textColorHint"
+                    android:textSize="15sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>-->
+           <!-- <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile No."
+                    android:textColor="@color/textColorHint" />
+
+                <TextView
+                    android:id="@+id/mobile_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/colorWhite"></TextView>
+
+            </LinearLayout>-->
+          <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="15dp">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/whatsupnew"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="WhatsApp No."
+                    android:textColor="@color/textColorHint" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/whatsapp_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_bottom_line"
+                    android:text=""
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBlack"></EditText>
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/textColorHint">
+
+                <EditText
+                    android:id="@+id/edt_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_bottom_line"
+                    android:hint="Address"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/textColorHint"
+                    android:textSize="15sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_fb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/textColorHint">
+
+                <EditText
+                    android:id="@+id/edt_fb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_bottom_line"
+                    android:hint="Facebook"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/textColorHint"
+                    android:textSize="15sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_inst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/textColorHint">
+
+                <EditText
+                    android:id="@+id/edt_inst"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_bottom_line"
+                    android:hint="Instagram"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/textColorHint"
+                    android:textSize="15sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_twitter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/textColorHint">
+
+                <EditText
+                    android:id="@+id/edt_twitter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_bottom_line"
+                    android:hint="Twitter"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/textColorHint"
+                    android:textSize="15sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/save" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+
+</LinearLayout>

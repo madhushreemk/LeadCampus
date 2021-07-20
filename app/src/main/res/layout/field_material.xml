@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/lnrlyt_teammembers"
+    android:paddingTop="20dp"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_materialname"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorBlack"
+        android:textColor="@color/colorBlack"
+        >
+
+        <EditText
+            android:id="@+id/edt_materialname"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_bottom_line"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+            android:textColorHint="@color/colorBlack"
+            android:textSize="15sp"
+            android:hint="Project Material"
+            android:inputType="textPersonName|textMultiLine"
+            android:textColor="@color/colorBlack"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_memberMailId"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textColorHint="@color/colorBlack"
+        android:textColor="@color/colorBlack"
+        >
+
+        <EditText
+            android:id="@+id/edt_materialcost"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_bottom_line"
+            android:textColorHint="@color/colorBlack"
+            android:inputType="number"
+            android:hint="Cost"
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/delete_button_material"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:background="@android:drawable/ic_delete">
+    </Button>
+
+
+    <!--    <Button
+            android:id="@+id/delete_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:drawable/ic_delete">
+        </Button>-->
+
+</LinearLayout>
+
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+   &lt;!&ndash; <EditText
+        android:id="@+id/number_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:inputType="phone"/>&ndash;&gt;
+    &lt;!&ndash;<Spinner
+        android:id="@+id/type_spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:entries="@array/types"
+        android:gravity="right" />&ndash;&gt;
+
+
+
+    <EditText
+        android:id="@+id/edt_member"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName|textMultiLine"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+        android:maxLines="3"
+        android:layout_weight="5"
+        android:background="@drawable/edittext_bottom_line"
+        android:textColorHint="@color/colorBlack"
+        android:hint="Member Name"
+        android:textSize="15sp"
+        android:textColor="@color/colorBlack"
+        />
+
+    <EditText
+        android:id="@+id/edt_memberMail"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:maxLines="3"
+        android:layout_weight="3"
+        android:background="@drawable/edittext_bottom_line"
+        android:inputType="textEmailAddress|textMultiLine"
+        android:textColorHint="@color/colorBlack"
+        android:textSize="15sp"
+        android:hint="e-mail id"
+        android:textColor="@color/colorBlack"
+        />
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="@android:drawable/ic_delete"
+        android:onClick="onDelete"/>
+</LinearLayout>-->

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#000000</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorYellow">#cccc00</color>
+    <color name="colorGrey">#cccccc</color>
+<color name="dark_black">#000000</color>
+    <color name="colorDateAccent">#82CAFF</color>
+
+    <color name="colorMenuBackground">#1e688d</color>
+
+    <color name="colorYellowdark">#ffff00</color>
+
+    <color name="colorPerpule">#673AB7</color>
+
+    <color name="usage_state_foreground_color">#FFC300</color>
+    <color name="state_background_color">#D9D6E9</color>
+    <color name="state_background_text_color">#808080</color>
+    <color name="state_foreground_text_color">#eeeeee</color>
+    <color name="demo_state_foreground_color">#009688</color>
+
+    <color name="description_background_color">#0BB5FF</color>
+    <color name="description_foreground_color">#002395</color>
+
+    <color name="usage_pink">#b42379</color>
+
+    <color name="hint_completion">#A9A9A9</color>
+    <!--<color name="textColorHint">#cccccc</color>-->
+    <color name="textColorHint">#000000</color>
+    <color name="ratingActive">#FFC300</color>
+    <color name="ratingNormal">#90a4ae</color>
+    <color name="darkgreen">#1e688d</color>
+    <color name="colorPinkdark">#FF1493</color>
+
+    <color name="blue_100">#d0d9ff</color>
+    <color name="blue_500">#5677fc</color>
+
+    <color name="yellow_100">#fff9c4</color>
+    <color name="yellow_500">#ffc107</color>
+    <color name="amber_100">#ffecb3</color>
+    <color name="amber_500">#ffc107</color>
+    <color name="teal_100">#b2dfdb</color>
+    <color name="teal_600">#00897b</color>
+
+    <color name="green_100">#a3e9a4</color>
+    <color name="green_500">#259b24</color>
+    <color name="red">#FF0000</color>
+
+    <color name="priority_high">#d9534f</color>
+    <color name="priority_medium">#f0ad4e</color>
+    <color name="priority_low">#5bc0de</color>
+
+    <color name="vivid_cyan">#3F51B5</color>
+    <color name="light_gray">#b5b5b5</color>
+    <color name="dark_black_red">#190f0d</color>
+
+</resources>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:minHeight="500dp"
+    android:background="@color/colorBlack"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        card_view:cardCornerRadius="0dp"
+        card_view:contentPadding="0dp">
+
+
+     <!--  <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/fullimageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/story02"
+                />
+        </LinearLayout>-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/share_images">
+
+            <ImageView
+                android:id="@+id/fullimageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+
+                />
+        </RelativeLayout>
+       <!-- <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottom_full">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#8000"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btn_readMore1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignTop="@+id/shareit1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"
+                    android:text="Read More"
+                    android:textColor="#0AB5D7"
+                    />
+
+                <ImageView
+                    android:id="@+id/shareit1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/sharp_share_white_24" />
+            </RelativeLayout>
+        </RelativeLayout>-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/share_half_image">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:clickable="false"
+            android:weightSum="4">
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/webview_youtube">
+
+            </WebView>
+           <!-- <fragment android:name="com.google.android.youtube.player.YouTubePlayerSupportFragment"
+                android:id="@+id/youtube_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android" />-->
+         <!--  <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <VideoView
+                    android:id="@+id/videoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            &lt;!&ndash;<VideoView
+                android:id="@+id/videoView"
+                android:layout_width="fill_parent"
+                android:layout_height="350dp" />&ndash;&gt;
+
+            </FrameLayout>-->
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="10dp"
+                android:text="Story Header"
+                android:id="@+id/txt_story"
+                android:textColorHighlight="@color/colorBlack"
+                android:textColor="#000"
+                android:clickable="false"
+                android:textSize="18dp"/>
+
+           <!-- <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:padding="2dp"
+                android:text="Text"
+                android:textColor="@android:color/black"
+                android:layout_height="175dp"
+                android:lineSpacingExtra=".5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="10dp"
+                android:clickable="false"
+                android:lines="10" />-->
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="195dp"
+                android:padding="2dp"
+                android:textColor="@android:color/black"
+                android:gravity="right|left"
+                android:scrollbars = "vertical"
+                android:textAlignment="gravity"
+                android:lineSpacingExtra="3dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="10dp"
+                android:text="text"
+                android:lines="13"
+                android:clickable="false"
+                android:textSize="13sp"
+                android:layout_marginBottom="5dp"/>
+
+        </LinearLayout>
+        </RelativeLayout>
+          <!-- <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:id="@+id/share_half">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#8000"
+                    android:gravity="center_vertical"
+                    android:id="@+id/linearlayout1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/btn_readMore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignTop="@+id/shareit"
+                        android:layout_marginLeft="20dp"
+                        android:layout_gravity="center"
+                        android:text="Read More"
+                        android:textColor="#0AB5D7"
+                        />
+
+                    <ImageView
+                        android:id="@+id/shareit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_gravity="center"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/sharp_share_white_24" />
+                </RelativeLayout>
+            </RelativeLayout>-->
+        <!--   <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical">
+
+
+               <ImageView
+                   android:id="@+id/imageView"
+                   android:layout_width="match_parent"
+                   android:layout_height="250dp"
+                   android:src="@drawable/story01"
+                   android:scaleType="centerCrop"
+                  />
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_marginTop="5dp"
+                   android:layout_marginBottom="5dp">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textStyle="bold"
+                       android:text="Story Header"
+                       android:textColorHighlight="#fff"
+                       android:textColor="#000"
+                       android:textSize="18dp"/>-->
+        <!--  <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/shareit"
+              android:layout_weight="1"
+              android:showAsAction="ifRoom"
+              android:src="@drawable/share"
+              android:layout_gravity="end"
+              android:layout_marginRight="5dp"
+              android:title="Share" />
+      </LinearLayout>-->
+        <!--<ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">-->
+        <!--         <TextView
+                     android:id="@+id/textView"
+                     android:layout_width="wrap_content"
+                     android:padding="2dp"
+                     android:text="Text"
+                     android:textColor="@android:color/black"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="10dp"/>
+     -->
+
+
+        <!-- </ScrollView>-->
+        <!--  <TextView
+              android:id="@+id/textView_link"
+              android:layout_width="wrap_content"
+              android:padding="2dp"
+              android:layout_height="wrap_content"
+              android:text="MORE AT BBC INDIA"
+              android:layout_marginTop="10dp"/>-->
+        <!-- <view
+             android:layout_width="match_parent"
+             android:layout_height="2dp"
+             android:layout_marginLeft="2dp"
+             android:layout_marginRight="2dp"
+             android:background="#A9A9A9"
+             />-->
+        <!--  <RelativeLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:gravity="bottom">
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/shareit"
+                  android:src="@drawable/share"
+                  android:layout_gravity="center"
+                  android:layout_marginRight="5dp"
+                  android:title="Share" />
+          </RelativeLayout>
+      </LinearLayout>-->
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

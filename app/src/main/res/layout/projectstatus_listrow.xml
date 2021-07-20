@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout android:id="@+id/relativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="20dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        >
+
+    <TextView
+        android:id="@+id/txt_projName"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:layout_weight = "2"
+        android:gravity = "center"
+        android:textSize="11sp"
+        android:text = ""
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        />
+
+<!--        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#c0c0c0"/>-->
+
+  <!--  <TextView
+        android:id="@+id/txt_projType"
+        android:layout_width = "0dp"
+        android:layout_height = "match_parent"
+        android:layout_weight = "2"
+        android:textSize="8sp"
+        android:gravity = "center"
+        android:text = ""
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        />
+-->
+    <!-- <TextView
+         android:id="@+id/txt_amountApp"
+         android:layout_width = "0dp"
+         android:layout_height = "match_parent"
+         android:layout_weight = "2"
+         android:gravity = "center"
+         android:padding = "5dp"
+         android:lines="4"
+         android:text = ""
+         android:textAlignment="center"
+         android:textColor="#ffffff"
+         />-->
+
+    <TextView
+        android:id="@+id/txt_approvedamt"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:layout_weight = "2"
+        android:gravity = "center"
+        android:textSize="11sp"
+        android:text = ""
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        />
+
+<!--        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#c0c0c0"/>-->
+
+    <TextView
+        android:id="@+id/txt_dispersedamt"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:layout_weight = "2"
+        android:gravity = "center"
+        android:lines="4"
+        android:text = ""
+        android:textAlignment="center"
+        android:textSize="11sp"
+        android:textColor="@color/colorBlack"
+        />
+
+ <!--       <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#c0c0c0"/>-->
+
+     <ImageView
+        android:id="@+id/img_projStatus"
+        android:layout_width = "match_parent"
+        android:layout_weight="2"
+        android:layout_height = "wrap_content"
+        android:visibility="visible"
+        android:gravity = "center"
+        android:text = ""
+        android:src="@drawable/approveneww"
+        android:textColor="@color/colorBlack"
+       />
+
+ <!--       <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#c0c0c0"/>-->
+
+    <RatingBar
+        android:id="@+id/ratingBar1"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:max="5"
+        style = "?android:attr/ratingBarStyleSmall"
+        android:stepSize="0.5" />
+
+     <!--   <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#c0c0c0"/>-->
+
+    <!--<View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"/>-->
+
+
+
+       <!--<RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content">-->
+<!--    <RatingBar
+        android:id="@+id/ratingBar1"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="true"
+        android:rating="3.5"
+        android:numStars="5"
+        android:max="5"
+        style = "?android:attr/ratingBarStyleSmall"
+        android:stepSize="0.5" />-->
+   <!-- </RelativeLayout>-->
+
+
+
+
+
+
+
+
+<!--    <TextView
+        android:id="@+id/txt_completionamt"
+        android:layout_width = "0dp"
+        android:layout_height = "match_parent"
+        android:layout_weight = "2"
+        android:gravity = "center"
+        android:textSize="8sp"
+        android:lines="4"
+        android:text = ""
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        />-->
+
+
+    <!-- <TextView
+         android:id="@+id/txt_leadFundedStatus"
+         android:layout_width = "0dp"
+         android:layout_height = "match_parent"
+         android:layout_weight = "2"
+         android:gravity = "center"
+         android:textAlignment="center"
+         android:padding = "5dp"
+         android:text = ""
+         android:layout_gravity="center"
+         android:textColor="#ffffff"
+         />-->
+    </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_height="1dp"
+            android:background="#c0c0c0"/>
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <TextView
+         android:id="@+id/txt_projName"
+         android:layout_width = "0dp"
+         android:layout_height = "match_parent"
+         android:layout_weight = "2"
+         android:textSize="8sp"
+         android:gravity = "center"
+         android:text = ""
+         android:textAlignment="center"
+         android:textColor="#ffffff"
+         />
+
+     <TextView
+         android:id="@+id/txt_projType"
+         android:layout_width = "0dp"
+         android:layout_height = "match_parent"
+         android:layout_weight = "2"
+         android:textSize="8sp"
+         android:gravity = "center"
+         android:text = ""
+         android:textAlignment="center"
+         android:textColor="#ffffff"
+         />
+
+     <TextView
+         android:id="@+id/txt_approvedamt"
+         android:layout_width = "0dp"
+         android:layout_height = "match_parent"
+         android:layout_weight = "2"
+         android:textSize="8sp"
+         android:gravity = "center"
+         android:lines="4"
+         android:text = ""
+         android:textAlignment="center"
+         android:textColor="#ffffff"
+         />
+
+     <TextView
+         android:id="@+id/txt_dispersedamt"
+         android:layout_width = "0dp"
+         android:layout_height = "match_parent"
+         android:layout_weight = "2"
+         android:gravity = "center"
+         android:textSize="8sp"
+         android:lines="4"
+         android:text = ""
+         android:textAlignment="center"
+         android:textColor="#ffffff"
+         />
+
+
+
+     <ImageView
+         android:id="@+id/img_projStatus"
+         android:layout_width = "0dp"
+         android:layout_height = "match_parent"
+         android:layout_weight = "2"
+         android:gravity = "center"
+         android:text = ""
+         android:textColor="#ffffff"
+         android:src="@drawable/ic_star_yellow_700_36dp"
+         />
+
+     <TextView
+         android:id="@+id/txt_completionamt"
+         android:layout_width = "0dp"
+         android:layout_height = "match_parent"
+         android:layout_weight = "2"
+         android:gravity = "center"
+         android:textSize="8sp"
+         android:lines="4"
+         android:text = ""
+         android:textAlignment="center"
+         android:textColor="#ffffff"
+         />-->
+
+

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/lnrlyt_material"
+    android:paddingTop="20dp"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_materialname"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorBlack"
+        android:textColor="@color/colorBlack"
+        >
+
+        <EditText
+            android:id="@+id/edt_materialname"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_bottom_line"
+            android:textColorHint="@color/colorBlack"
+            android:textSize="15sp"
+            android:hint="Project Material"
+            android:textColor="@color/colorBlack"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_materialcost"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textColorHint="@color/colorBlack"
+        android:textColor="@color/colorBlack"
+        >
+
+        <EditText
+            android:id="@+id/edt_materialcost"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_bottom_line"
+            android:textColorHint="@color/colorBlack"
+            android:inputType="number"
+            android:hint="Cost"
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:background="@android:drawable/ic_delete">
+    </Button>
+
+
+    <!--    <Button
+            android:id="@+id/delete_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:drawable/ic_delete">
+        </Button>-->
+
+</LinearLayout>
+
+
+
+

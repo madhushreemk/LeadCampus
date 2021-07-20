@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!--<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:id="@+id/lnrlyt_projStatus"
+     android:padding="10dp"
+     android:orientation="vertical">
+
+
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/til_searchProject"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textColorHint="@color/colorBlack"
+      android:textColor="@color/colorBlack"
+      >
+
+   <EditText
+      android:id="@+id/etSearch"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+       android:hint="Search Project Title"
+       android:textColor="@color/colorBlack"
+       android:textColorHint="@color/colorBlack"
+       android:textSize="15sp"
+      android:background="@drawable/edittext_bottom_line"
+      />
+  </com.google.android.material.textfield.TextInputLayout>
+
+
+ <!-- <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingTop="10dp"
+      android:text="Graphical Report"
+      android:id="@+id/btn_generateReport"
+      />-->
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+
+
+  <LinearLayout
+      android:id = "@+id/relativeLayout1"
+      android:layout_width = "fill_parent"
+      android:layout_height = "30dp"
+      android:gravity = "center"
+      android:layout_gravity="center"
+      android:paddingTop="10dp"
+       >
+
+
+   <TextView
+       android:layout_width = "0dp"
+       android:layout_height = "match_parent"
+       android:layout_weight = "2"
+       android:gravity = "center"
+       android:layout_gravity="center"
+       android:text = "Project Name"
+       android:textSize="12sp"
+       android:textStyle="bold"
+       android:textAlignment="center"
+       android:textColor="@color/colorBlack"
+       />
+
+ <!--  <TextView
+       android:layout_width = "0dp"
+       android:layout_height = "match_parent"
+       android:layout_weight = "2"
+       android:gravity = "center"
+       android:text = "Project Type"
+       android:textAlignment="center"
+       android:textSize="8sp"
+       android:textColor="#ffffff"
+       />-->
+
+   <!--   <TextView
+          android:layout_width = "0dp"
+          android:layout_height = "match_parent"
+          android:layout_weight = "2"
+          android:gravity = "center"
+          android:padding = "5dp"
+          android:lines="4"
+          android:text = "Amount App"
+          android:textAlignment="center"
+          android:textColor="#ffffff"
+          />-->
+
+   <TextView
+       android:layout_width = "0dp"
+       android:layout_height = "match_parent"
+       android:layout_weight = "2"
+       android:gravity = "center"
+       android:text = "Approved Amt"
+       android:textSize="12sp"
+       android:textStyle="bold"
+       android:layout_gravity="top"
+       android:textAlignment="center"
+       android:textColor="@color/colorBlack"
+       />
+
+
+
+
+
+
+   <TextView
+       android:layout_width = "0dp"
+       android:layout_height = "match_parent"
+       android:layout_weight = "2"
+       android:gravity = "center"
+       android:layout_gravity="center"
+       android:textSize="12sp"
+       android:text = "Released Amt"
+       android:textStyle="bold"
+       android:textAlignment="center"
+       android:textColor="@color/colorBlack"
+       />
+
+   <TextView
+       android:layout_width = "0dp"
+       android:layout_height = "match_parent"
+       android:layout_weight = "2"
+       android:textAlignment="center"
+       android:gravity="center"
+       android:layout_gravity="center"
+       android:textSize="12sp"
+       android:textStyle="bold"
+       android:text = "Status"
+       android:textColor="@color/colorBlack"
+       />
+
+<!--   <TextView
+       android:layout_width = "0dp"
+       android:layout_height = "match_parent"
+       android:layout_weight = "2"
+       android:gravity = "center"
+       android:textAlignment="center"
+       android:text = "Completion Amt"
+       android:textSize="8sp"
+       android:textColor="#ffffff"
+       />-->
+
+
+
+   <!--<TextView
+       android:layout_width = "0dp"
+       android:layout_height = "match_parent"
+       android:layout_weight = "2"
+       android:gravity = "center"
+       android:textAlignment="center"
+       android:padding = "5dp"
+       android:text = "Lead Funded Status"
+       android:layout_gravity="center"
+       android:textColor="#ffffff"
+       />-->
+
+  </LinearLayout>
+
+   <View
+       android:layout_width="match_parent"
+       android:layout_marginTop="3dp"
+       android:layout_height="1dp"
+       android:background="#c0c0c0"/>
+
+  </LinearLayout>
+
+  <ListView
+      android:id = "@+id/listview"
+      android:layout_width = "match_parent"
+      android:layout_height = "wrap_content"
+      />
+
+<!--  <ProgressBar
+      android:visibility="gone"
+      android:id="@+id/progressBar"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_centerVertical="true" />-->
+
+
+
+ </LinearLayout>
+</ScrollView>
+<!--</android.support.v4.widget.SwipeRefreshLayout>-->
